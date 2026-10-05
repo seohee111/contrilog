@@ -2,6 +2,43 @@
 
 > 회사 프로젝트 팀의 회의록·문서 수정 이력·Task Board·메시지를 근거로, 팀원의 기여 Claim을 Evidence와 연결하고 업무 정체를 **후보 → 확인 → 확정 → 지원 → 해결**의 단계로 다루는 AI Team Manager.
 
+## 빠른 시작 (제출·심사용)
+
+- 공개 저장소: https://github.com/seohee111/contrilog (branch: `main`)
+- 데이터: `data/`의 P001·P002는 팀이 만든 **synthetic 회사 프로젝트 데이터**입니다. 실제 개인정보는 없습니다.
+  `data/ground_truth/`는 평가 전용이며 Agent 코드는 접근하지 않습니다(테스트로 강제).
+- Python 3.10 이상 (개발·검증: Python 3.10.12)
+
+```bash
+git clone https://github.com/seohee111/contrilog.git && cd contrilog
+# 제출 ZIP을 쓸 때: mkdir contrilog && unzip <ZIP> -d contrilog && cd contrilog
+# (격리 테스트 일부가 프로젝트 폴더 이름 contrilog를 전제로 하므로 폴더 이름을 contrilog로 둡니다)
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt   # pydantic, pytest, anthropic(선택 백엔드용 SDK)
+.venv/bin/pip install -e .                  # contrilog 패키지 설치 (scripts·테스트가 import)
+```
+
+**답장 해석 LLM — Qwen3 32B + Ollama (로컬 실행, 기본값)**
+
+```bash
+ollama pull qwen3:32b          # Ollama 설치 후 한 번 (약 20GB)
+ollama serve                   # http://localhost:11434 (이미 서비스로 떠 있으면 생략)
+```
+
+Ollama에 연결할 수 없으면 답장 해석은 규칙 해석기로 자동 대체됩니다. Claude API(`--provider anthropic`)는 선택 기능이며,
+쓰려면 프로젝트 루트 `.env`에 `ANTHROPIC_API_KEY=...`를 둡니다(`.env`는 저장소·제출물에 포함하지 않음). 평가 수치는 Ollama Qwen3 32B 기준입니다.
+
+| 목적 | 명령 |
+|---|---|
+| 데이터 검증 | `.venv/bin/python scripts/validate_data.py` |
+| 자동화 테스트 (714개) | `.venv/bin/python -m pytest -q` |
+| 웹 시연 (PM 대시보드) | `.venv/bin/python scripts/web_demo.py` → http://127.0.0.1:8790 (`--port`, `--host`, `--provider` 선택) |
+| 전체 평가 (규칙/LLM/오라클 × P001·P002 × Memory OFF/ON) | `.venv/bin/python scripts/evaluate_all.py` → `reports/latest.md`, `reports/latest.json` |
+| 전체 평가 (LLM 없이 규칙·오라클만) | `.venv/bin/python scripts/evaluate_all.py --no-llm` |
+
+웹 시연은 시나리오 ①(P002 웹훅 서명 오류)을 고르고 [새로 시작] → [다음 단계]로 진행합니다. 지원 요청은 PM이 [지원 요청 승인]을 눌러야 전송됩니다.
+`reports/`에는 보고서 수치의 근거가 된 평가 결과(2026-10-05)가 들어 있습니다. `evaluate_all.py`를 다시 실행하면 `reports/latest.*`가 새 결과로 바뀝니다.
+
 ## 원칙
 
 - 사람의 기여도를 점수화하거나 순위를 매기지 않는다. (schema에 score/rank류 필드가 없고, 테스트로 강제한다)
@@ -71,7 +108,7 @@
 - 프롬프트에는 범주 정의만 둔다. 평가 데이터의 표현 유형을 힌트로 담았던 초안(reply-v1, 46/46)은 폐기했고 reply-v2(44/46)가 공식 수치다.
 - `scripts/evaluate_replies.py`(답장 46건 단독 비교), `scripts/evaluate_all.py`(규칙/LLM/오라클 × P001·P002 × Memory OFF/ON → `reports/latest.md`).
 - `scripts/demo.py`: 한 Task의 관찰 → 확인 → Block → 지원 제안 → **터미널에서 PM 승인** → 해결 → Memory 시연.
-- `scripts/web_demo.py` + `frontend/index.html`: 같은 흐름의 웹 화면 (Task 현황판, 판단 타임라인, PM 승인·거절 버튼, Memory).
+- `scripts/web_demo.py` + `frontend/index.html`: 같은 흐름의 웹 PM 대시보드 (업무 상태 요약, 7단계 진행, 담당자 대화·AI 해석, PM 승인·거절 버튼, AI 판단 보정, 시연 모드).
   실행기 `contrilog/webui/`는 제안이 생기면 시간을 멈추고 사람의 결정을 기다린다 (HumanApprovalGate로만 적용).
 - 대회 제출물: `submission/` (개발완료보고서 5쪽, 기술설명서 1쪽, 출처·AI 활용 신고서, 발표자료 10장, 시연 녹화 가이드).
 
