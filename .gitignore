@@ -14,5 +14,6 @@ data/agent_memory/*
 
 # 팀 내부 자료 · 중복 산출물
 인수인계 문서/
-submission/6_소스코드_contrilog.zip
+submission/
 reports/**/raw/
+reports/ui_screenshots/
