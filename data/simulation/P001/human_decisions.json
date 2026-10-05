@@ -1,0 +1,15 @@
+[
+  {
+    "decision_id": "HDC-001",
+    "project_id": "P001",
+    "approver_id": "M_C",
+    "decision": "APPROVE",
+    "task_id": "T11",
+    "about_member_id": "M_C",
+    "available_from": "2026-10-08T09:00:00+09:00",
+    "available_until": "2026-10-09T19:50:00+09:00",
+    "delay_minutes": 15,
+    "note": "도움 받고 싶어요. 오늘 저녁에 같이 보면 좋겠어요.",
+    "action_type": "SUPPORT_REQUEST"
+  }
+]

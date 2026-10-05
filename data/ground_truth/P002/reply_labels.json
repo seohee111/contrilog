@@ -1,0 +1,282 @@
+[
+  {
+    "reply_id": "SIM-001",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-002",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-003",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-004",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-005",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-006",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-007",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-008",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-009",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-010",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": "진행·예정을 나타내는 정형 어휘 없이 정상 진행을 말함"
+  },
+  {
+    "reply_id": "SIM-011",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-012",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": "작업 장소가 기록 밖(노션)이라는 설명"
+  },
+  {
+    "reply_id": "SIM-013",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-014",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-015",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": "남은 범위가 외부 회신 대기로 멈춘 상태. 다른 범위가 잘 돈다는 말이 섞여 있음"
+  },
+  {
+    "reply_id": "SIM-016",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": "원인은 팀 내부 운영 설정 변경 (외부 의존 아님)"
+  },
+  {
+    "reply_id": "SIM-017",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": "팀 내 의사결정(기획 기준) 대기"
+  },
+  {
+    "reply_id": "SIM-018",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": "첫 확인(6/4~6/8 오전)에는 응답하지 않았고, 이후 다시 물으면 답한다"
+  },
+  {
+    "reply_id": "SIM-019",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": "'막혔다기보다는' 완곡 부정 + 다른 팀 결정 대기 (외부 의존)"
+  },
+  {
+    "reply_id": "SIM-020",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": "'문제 없을 줄 알았는데'는 막힘을 부정하는 말이 아님"
+  },
+  {
+    "reply_id": "SIM-021",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": "'0건'은 남은 문제가 없다는 뜻"
+  },
+  {
+    "reply_id": "SIM-022",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": "응답자 본인 몫은 끝났지만 Task는 공동 담당자의 외부 결재 대기로 멈춤"
+  },
+  {
+    "reply_id": "SIM-023",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-024",
+    "project_id": "P002",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-025",
+    "project_id": "P002",
+    "expected_semantic": "ACCEPTS_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-026",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": "거절 어휘 없이 다른 사람을 추천"
+  },
+  {
+    "reply_id": "SIM-027",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-028",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-029",
+    "project_id": "P002",
+    "expected_semantic": "ACCEPTS_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-030",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": "관련 기획 문서 작성자지만 원인 해결은 못 한다고 답함"
+  },
+  {
+    "reply_id": "SIM-031",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-032",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-033",
+    "project_id": "P002",
+    "expected_semantic": "ACCEPTS_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-034",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-035",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-036",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-037",
+    "project_id": "P002",
+    "expected_semantic": "ACCEPTS_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-038",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-039",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-040",
+    "project_id": "P002",
+    "expected_semantic": "DECLINES_SUPPORT",
+    "expected_block_kind": null,
+    "note": "'볼게요'가 있지만 본인이 지원하겠다는 뜻이 아님"
+  }
+]

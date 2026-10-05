@@ -1,0 +1,6 @@
+[
+  {"member_id": "M_A", "project_id": "P001", "label": "A", "name": "윤서진", "role": "프론트엔드, 분석 실험"},
+  {"member_id": "M_B", "project_id": "P001", "label": "B", "name": "한도윤", "role": "문서·일정 관리, 배포 서버"},
+  {"member_id": "M_C", "project_id": "P001", "label": "C", "name": "박지후", "role": "백엔드 API"},
+  {"member_id": "M_D", "project_id": "P001", "label": "D", "name": "이하은", "role": "데이터 파이프라인, 발표 기획"}
+]

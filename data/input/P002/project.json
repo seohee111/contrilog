@@ -1,0 +1,37 @@
+{
+  "project_id": "P002",
+  "name": "ShipTrack — 배송 지연 사전 알림 서비스",
+  "organization": "물류플랫폼실 배송경험팀 (2026 2분기)",
+  "description": "택배사 배송 이벤트를 수집해 지연이 예상되는 주문을 고객에게 먼저 알려 주는 서비스. 택배사 연동, 지연 예측 모델, 알림 설정·배송 추적 화면, 운영 인프라를 포함한다.",
+  "start_date": "2026-04-27",
+  "end_date": "2026-06-19",
+  "member_ids": [
+    "M_A",
+    "M_B",
+    "M_C",
+    "M_D",
+    "M_E"
+  ],
+  "milestones": [
+    {
+      "milestone_id": "MS01",
+      "name": "요구사항·설계 확정",
+      "due_date": "2026-05-08"
+    },
+    {
+      "milestone_id": "MS02",
+      "name": "사내 베타 오픈",
+      "due_date": "2026-05-29"
+    },
+    {
+      "milestone_id": "MS03",
+      "name": "고객사 파일럿 오픈",
+      "due_date": "2026-06-12"
+    },
+    {
+      "milestone_id": "MS04",
+      "name": "정식 릴리스 및 회고",
+      "due_date": "2026-06-19"
+    }
+  ]
+}

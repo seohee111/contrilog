@@ -1,0 +1,270 @@
+[
+  {
+    "gt_contribution_id": "GTC-01",
+    "case_id": "CASE01",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "contribution_type": "IDEA",
+    "description": "정체 탐지를 후보 → 확인 → 확정 → 해결 단계로 나누는 아이디어 제안 (설계 문서 3.2절에 반영)",
+    "expected_evidence_ids": [
+      "UT-MT02-03",
+      "UT-MT02-05",
+      "REV-005"
+    ],
+    "related_task_ids": [
+      "T01"
+    ],
+    "related_claim_id": "CLM-01",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-02",
+    "case_id": "CASE02",
+    "project_id": "P001",
+    "member_id": "M_D",
+    "contribution_type": "IDEA",
+    "description": "최종 발표 '문제 → 접근 → 데모 → 한계와 향후 과제' 4단 구성 최초 제안",
+    "expected_evidence_ids": [
+      "UT-MT05-04"
+    ],
+    "related_task_ids": [
+      "T09"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-03",
+    "case_id": "CASE04",
+    "project_id": "P001",
+    "member_id": "M_D",
+    "contribution_type": "EXECUTION",
+    "description": "평가용 샘플 데이터셋 생성 스크립트 작성 및 데이터셋 구축·업로드",
+    "expected_evidence_ids": [
+      "REV-012",
+      "REV-019",
+      "REV-020",
+      "MSG-014",
+      "T04"
+    ],
+    "related_task_ids": [
+      "T04"
+    ],
+    "related_claim_id": "CLM-09",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-04",
+    "case_id": "CASE05",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "contribution_type": "REVIEW",
+    "description": "전처리 피처 window의 데이터 누수 발견 및 수정 방향 제시 → 전처리 코드 수정으로 이어짐",
+    "expected_evidence_ids": [
+      "MSG-018",
+      "REV-029",
+      "MSG-019",
+      "REV-033"
+    ],
+    "related_task_ids": [
+      "T02",
+      "T08"
+    ],
+    "related_claim_id": "CLM-03",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-05",
+    "case_id": "CASE06",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "contribution_type": "EXECUTION",
+    "description": "중간보고서 템플릿, 참고문헌·그림/표 번호·본문 서식 통일, 회의록 요약 부록과 자료 링크 정리",
+    "expected_evidence_ids": [
+      "REV-018",
+      "REV-023",
+      "REV-024",
+      "REV-027",
+      "REV-032",
+      "REV-037",
+      "REV-043",
+      "REV-045",
+      "REV-046",
+      "MSG-016"
+    ],
+    "related_task_ids": [
+      "T07"
+    ],
+    "related_claim_id": "CLM-04",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-06",
+    "case_id": "CASE07",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "contribution_type": "EXECUTION",
+    "description": "대시보드 API(/api/tasks, /api/timeline) 구현 및 배포",
+    "expected_evidence_ids": [
+      "REV-017",
+      "REV-022",
+      "REV-025",
+      "REV-030",
+      "T06"
+    ],
+    "related_task_ids": [
+      "T06"
+    ],
+    "related_claim_id": "CLM-05",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-07",
+    "case_id": "CASE07",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "contribution_type": "SUPPORT",
+    "description": "배포 서버 CORS preflight 실패 원인(nginx OPTIONS 405) 진단 및 nginx 설정 수정으로 C의 문제 해결 지원",
+    "expected_evidence_ids": [
+      "MSG-021",
+      "REV-031",
+      "MSG-023"
+    ],
+    "related_task_ids": [
+      "T06"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-08",
+    "case_id": "CASE08",
+    "project_id": "P001",
+    "member_id": "M_D",
+    "contribution_type": "IDEA",
+    "description": "팀원별 이벤트를 시간축으로 보여주는 타임라인 뷰 아이디어 제안",
+    "expected_evidence_ids": [
+      "UT-MT03-04",
+      "UT-MT03-05"
+    ],
+    "related_task_ids": [
+      "T05"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-09",
+    "case_id": "CASE08",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "contribution_type": "EXECUTION",
+    "description": "타임라인 뷰 구현 (레이아웃, 필터, API 연동)",
+    "expected_evidence_ids": [
+      "REV-015",
+      "REV-016",
+      "REV-021",
+      "REV-036",
+      "REV-039",
+      "T05"
+    ],
+    "related_task_ids": [
+      "T05"
+    ],
+    "related_claim_id": "CLM-06",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-10",
+    "case_id": "CASE09",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "contribution_type": "COORDINATION",
+    "description": "데모 캡처와 Agent 기능 완료 사이의 일정 의존성 충돌 발견 및 작업 순서 재조정",
+    "expected_evidence_ids": [
+      "REV-028",
+      "MSG-028",
+      "REV-040",
+      "UT-MT06-01"
+    ],
+    "related_task_ids": [
+      "T09",
+      "T10",
+      "T11"
+    ],
+    "related_claim_id": "CLM-07",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-11",
+    "case_id": "CASE10",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "contribution_type": "EXECUTION",
+    "description": "Claim 검증 API와 Evidence 검색 모듈 구현 및 기간 필터 버그 수정",
+    "expected_evidence_ids": [
+      "REV-047",
+      "REV-049",
+      "REV-051",
+      "REV-055",
+      "REV-058",
+      "REV-059",
+      "T11"
+    ],
+    "related_task_ids": [
+      "T11"
+    ],
+    "related_claim_id": "CLM-08",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-12",
+    "case_id": "CASE10",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "contribution_type": "SUPPORT",
+    "description": "Evidence 검색 결과 0건 문제의 원인(created_at ms vs 필터 s 단위 불일치) 진단으로 C의 Block 해소 지원",
+    "expected_evidence_ids": [
+      "REV-058"
+    ],
+    "related_task_ids": [
+      "T11"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_B",
+        "about_member_id": "M_C",
+        "expected_content": "B가 지원 요청을 받아 C와 함께 Evidence 검색 문제를 보겠다고 응답",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      },
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "C가 B와 함께 원인(기간 필터 단위)을 찾아 수정했다고 B의 지원을 직접 확인",
+        "question_intent": "COUNTERPART_CONFIRMATION",
+        "expected_semantic_outcome": "CONFIRMS_COUNTERPART"
+      }
+    ],
+    "inaccessible_source_ids": [
+      "MSG-039",
+      "MSG-040"
+    ]
+  }
+]

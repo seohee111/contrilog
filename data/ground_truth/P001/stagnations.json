@@ -1,0 +1,151 @@
+[
+  {
+    "gt_stagnation_id": "GTS-01",
+    "case_id": "CASE03",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "task_id": "T03",
+    "is_actual_block": true,
+    "block_started_at": "2026-09-15T13:40:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "회사 GitHub organization의 OAuth 앱 접근 제한으로 org 레포 조회가 403 — 관리자(보안팀) 승인 대기",
+    "evaluation_as_of": "2026-10-13T00:00:00+09:00",
+    "expected_final_state": "CONFIRMED_BLOCK",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK"
+    ],
+    "forbidden_states": [
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-014",
+      "MSG-009",
+      "T03",
+      "UT-MT04-02",
+      "UT-MT06-05"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T03",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "organization OAuth 앱 접근 제한으로 403, 관리자(보안팀) 승인 대기 중이라 진행 불가",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      }
+    ],
+    "inaccessible_source_ids": [
+      "MSG-012",
+      "MSG-013"
+    ]
+  },
+  {
+    "gt_stagnation_id": "GTS-02",
+    "case_id": "CASE04",
+    "project_id": "P001",
+    "member_id": "M_D",
+    "task_id": "T04",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-09-24T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-012",
+      "UT-MT04-05",
+      "REV-019",
+      "REV-020",
+      "MSG-014",
+      "T04"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T04",
+        "responder_id": "M_D",
+        "about_member_id": null,
+        "expected_content": "로컬에서 생성 스크립트 실행·라벨 검수 중이며 막힌 것 없음, 9/23 업로드 예정",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_stagnation_id": "GTS-03",
+    "case_id": "CASE10",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "task_id": "T11",
+    "is_actual_block": true,
+    "block_started_at": "2026-10-07T16:10:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "Evidence 검색 기간 필터가 초 단위 값을 ms epoch로 저장된 created_at과 비교해 결과가 항상 0건",
+    "evaluation_as_of": "2026-10-11T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_B",
+      "earliest_at": "2026-10-07T16:10:00+09:00"
+    },
+    "resolved_at": "2026-10-09T22:40:00+09:00",
+    "expected_evidence_ids": [
+      "REV-055",
+      "MSG-036",
+      "T11",
+      "REV-058"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "기간 필터 추가 후 Evidence 검색 결과가 0건이고 원인을 못 찾아 막혀 있음",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      },
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_B",
+        "about_member_id": "M_C",
+        "expected_content": "B가 C를 지원하겠다고 응답",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      },
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "해결 확인: 기간 필터 단위 불일치를 고쳐 검색이 정상 동작",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "CONFIRMS_COMPLETION"
+      }
+    ],
+    "inaccessible_source_ids": [
+      "MSG-038",
+      "MSG-039",
+      "MSG-040"
+    ]
+  }
+]

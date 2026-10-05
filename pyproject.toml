@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contrilog"
+version = "0.1.0"
+description = "AI Team Manager that links contribution claims to evidence and checks stagnation step by step (synthetic-data MVP)"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+llm = ["anthropic>=1.0"]
+
+[tool.setuptools.packages.find]
+include = ["contrilog*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,81 @@
+[
+  {
+    "gt_claim_id": "GTCL-01",
+    "case_id": "CASE14",
+    "claim_id": "CLM-01",
+    "claimant_id": "M_E",
+    "claimed_type": "SUPPORT",
+    "atomic_claim": "웹훅 경로를 게이트웨이 변환 대상에서 빼 B의 401 문제 해결을 도왔다",
+    "expected_status": "VERIFIED",
+    "expected_supporting_evidence_ids": [
+      "MSG-020",
+      "MSG-023",
+      "REV-047"
+    ],
+    "expected_contradicting_evidence_ids": [],
+    "related_gt_contribution_id": "GTC-01"
+  },
+  {
+    "gt_claim_id": "GTCL-02",
+    "case_id": "CASE15",
+    "claim_id": "CLM-02",
+    "claimant_id": "M_C",
+    "claimed_type": "EXECUTION",
+    "atomic_claim": "배송 추적 지도 화면을 구현했다",
+    "expected_status": "VERIFIED",
+    "expected_supporting_evidence_ids": [
+      "REV-050",
+      "REV-054",
+      "REV-064"
+    ],
+    "expected_contradicting_evidence_ids": [],
+    "related_gt_contribution_id": "GTC-02"
+  },
+  {
+    "gt_claim_id": "GTCL-03",
+    "case_id": "CASE15",
+    "claim_id": "CLM-02",
+    "claimant_id": "M_C",
+    "claimed_type": "IDEA",
+    "atomic_claim": "배송 상태별 마커 색상 아이디어를 냈다",
+    "expected_status": "INSUFFICIENT_EVIDENCE",
+    "expected_supporting_evidence_ids": [],
+    "expected_contradicting_evidence_ids": [
+      "MSG-021",
+      "MSG-022"
+    ],
+    "related_gt_contribution_id": null
+  },
+  {
+    "gt_claim_id": "GTCL-04",
+    "case_id": "CASE16",
+    "claim_id": "CLM-03",
+    "claimant_id": "M_D",
+    "claimed_type": "EXECUTION",
+    "atomic_claim": "지연 예측 모델 v1과 v2를 학습하고 결과를 정리했다",
+    "expected_status": "VERIFIED",
+    "expected_supporting_evidence_ids": [
+      "REV-042",
+      "REV-089",
+      "T05",
+      "T19"
+    ],
+    "expected_contradicting_evidence_ids": [],
+    "related_gt_contribution_id": "GTC-04"
+  },
+  {
+    "gt_claim_id": "GTCL-05",
+    "case_id": "CASE17",
+    "claim_id": "CLM-04",
+    "claimant_id": "M_A",
+    "claimed_type": "COORDINATION",
+    "atomic_claim": "파일럿 택배사 범위와 연동 일정을 조정했다",
+    "expected_status": "VERIFIED",
+    "expected_supporting_evidence_ids": [
+      "MSG-029",
+      "REV-059"
+    ],
+    "expected_contradicting_evidence_ids": [],
+    "related_gt_contribution_id": "GTC-05"
+  }
+]

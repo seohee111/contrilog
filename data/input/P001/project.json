@@ -1,0 +1,15 @@
+{
+  "project_id": "P001",
+  "name": "TeamLens — 사내 협업 로그 대시보드",
+  "organization": "신규 서비스 TF (2026 하반기, 본업 병행)",
+  "description": "사내 프로젝트 팀의 회의록, 문서 수정 이력, Task 상태를 모아 시간축으로 보여주고, 팀원이 제출한 기여 내역을 기록과 대조해 볼 수 있게 하는 웹 서비스. 정체 알림과 Claim 검증 기능을 포함한다.",
+  "start_date": "2026-09-01",
+  "end_date": "2026-10-16",
+  "member_ids": ["M_A", "M_B", "M_C", "M_D"],
+  "milestones": [
+    {"milestone_id": "MS01", "name": "설계 문서 확정", "due_date": "2026-09-11"},
+    {"milestone_id": "MS02", "name": "중간보고서 제출 (본부 리뷰)", "due_date": "2026-10-02"},
+    {"milestone_id": "MS03", "name": "최종 발표 (경영진 데모)", "due_date": "2026-10-13"},
+    {"milestone_id": "MS04", "name": "TF 회고용 기여 내역 제출", "due_date": "2026-10-15"}
+  ]
+}

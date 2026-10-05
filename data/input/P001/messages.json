@@ -1,0 +1,496 @@
+[
+  {
+    "message_id": "MSG-001",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-02T22:15:00+09:00",
+    "text": "일정표 공유 드라이브에 올렸어요. 주간 회의는 매주 월요일 저녁 7시입니다.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-002",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-04T16:40:00+09:00",
+    "text": "설계 문서 목차 초안 올렸어요. 각자 담당 장 채워 주세요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-003",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-08T15:20:00+09:00",
+    "text": "GitHub OAuth 앱 등록했어요. 토큰 발급까지 확인했습니다.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-004",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-09T14:30:00+09:00",
+    "text": "설계 문서 3.2절 월요일 회의 내용대로 고쳤어요. 정체 알림을 단계별로 나눴습니다.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-005",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-09T14:45:00+09:00",
+    "text": "확인했어요. 확인 요청 단계 들어간 거 좋네요.",
+    "reply_to_message_id": "MSG-004"
+  },
+  {
+    "message_id": "MSG-006",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-09-11T00:05:00+09:00",
+    "text": "전처리 1차 올렸어요. 활동량 피처는 라벨 기준일 앞뒤로 window 잡아서 만들었어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-007",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-11T18:05:00+09:00",
+    "text": "설계 문서 v1.0으로 확정했습니다. 수고하셨어요!",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-008",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-15T10:40:00+09:00",
+    "text": "설계 문서에 4.3 타임라인 뷰 섹션 추가했어요. 첫 화면에서 팀원별 이벤트를 시간축으로 보는 화면이에요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-009",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-15T13:50:00+09:00",
+    "text": "organization 레포 조회 붙이는 중인데 응답이 좀 이상하네요. 내일 다시 볼게요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-010",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-17T21:10:00+09:00",
+    "text": "타임라인 뷰 레이아웃 올렸어요. 지금은 더미 데이터로 그려요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-011",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-18T10:00:00+09:00",
+    "text": "다음 주 목요일부터 추석 연휴예요. 연휴 중엔 작업 안 하셔도 되고, 28일 회의 때 이어서 해요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-012",
+    "project_id": "P001",
+    "channel": "dm",
+    "channel_type": "DIRECT_MESSAGE",
+    "sender_id": "M_B",
+    "recipient_ids": [
+      "M_C"
+    ],
+    "sent_at": "2026-09-21T21:30:00+09:00",
+    "text": "보안팀에 organization 승인 건 저도 메일 보냈어요. 답 오면 공유할게요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-013",
+    "project_id": "P001",
+    "channel": "dm",
+    "channel_type": "DIRECT_MESSAGE",
+    "sender_id": "M_C",
+    "recipient_ids": [
+      "M_B"
+    ],
+    "sent_at": "2026-09-21T21:40:00+09:00",
+    "text": "감사합니다! 저는 대시보드 API 먼저 할게요.",
+    "reply_to_message_id": "MSG-012"
+  },
+  {
+    "message_id": "MSG-014",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-09-23T13:30:00+09:00",
+    "text": "평가용 샘플 데이터셋 올렸어요. 4인 가상 프로젝트 30개, 이벤트 41,280건이고 생성 스크립트도 같이 있어요. 지난주 내내 로컬에서 돌리면서 라벨 검수했어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-015",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-23T13:45:00+09:00",
+    "text": "받았어요! 연휴 끝나고 baseline 돌려 볼게요.",
+    "reply_to_message_id": "MSG-014"
+  },
+  {
+    "message_id": "MSG-016",
+    "project_id": "P001",
+    "channel": "#docs",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-27T16:10:00+09:00",
+    "text": "중간보고서 참고문헌 APA 형식으로 맞추는 중이에요. 내용은 안 건드리고 형식만 정리할게요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-017",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-28T23:05:00+09:00",
+    "text": "일정표에 최종 발표 준비 일정 추가했어요. 확인 부탁드려요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-018",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T11:20:00+09:00",
+    "text": "baseline 검증 F1이 0.97이 나와서 너무 높다 싶어 preprocess.py를 봤는데요, build_features에서 '최근 7일 활동량' window가 라벨 기준일 이후 3일까지 포함돼요. 라벨을 정하는 시점 이후 활동이 피처에 들어가니까 데이터 누수인 것 같아요. window는 기준일 이전으로 자르고, train/test도 랜덤 말고 시간순으로 나눠야 할 것 같아요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-019",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T11:50:00+09:00",
+    "text": "헉 맞네요. +3일이 들어가 있었어요. 내일 오전에 고칠게요.",
+    "reply_to_message_id": "MSG-018"
+  },
+  {
+    "message_id": "MSG-020",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T16:40:00+09:00",
+    "text": "대시보드 API 배포 서버에 올렸는데, 프론트에서 /api/timeline 호출하면 CORS 에러가 나요. 서버에 CORS 미들웨어도 넣었는데 로컬에선 되고 배포 서버에서만 안 돼요. 브라우저 콘솔엔 preflight 실패라고만 나오고 원인을 못 찾겠어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-021",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T20:50:00+09:00",
+    "text": "배포 서버 로그 보니까 OPTIONS 요청이 nginx에서 405로 막혀서 앱까지 안 가고 있어요. nginx.conf에서 preflight 처리하고 CORS 헤더 붙이도록 제가 고쳐 볼게요.",
+    "reply_to_message_id": "MSG-020"
+  },
+  {
+    "message_id": "MSG-022",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T21:40:00+09:00",
+    "text": "nginx.conf 수정해서 재시작했어요. 다시 해 보실래요?",
+    "reply_to_message_id": "MSG-020"
+  },
+  {
+    "message_id": "MSG-023",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T22:05:00+09:00",
+    "text": "됐어요! /api/timeline 정상으로 내려와요. 도윤님 감사합니다.",
+    "reply_to_message_id": "MSG-020"
+  },
+  {
+    "message_id": "MSG-024",
+    "project_id": "P001",
+    "channel": "#docs",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-09-29T22:20:00+09:00",
+    "text": "회의록 요약 부록 1~5회차 정리했어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-025",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-09-30T10:50:00+09:00",
+    "text": "preprocess.py 수정했어요. window를 기준일 이전으로만 자르고 split도 시간순으로 바꿨어요.",
+    "reply_to_message_id": "MSG-018"
+  },
+  {
+    "message_id": "MSG-026",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-30T15:10:00+09:00",
+    "text": "재실험해 보니 F1 0.71 나와요. 이게 현실적인 수치 같아요.",
+    "reply_to_message_id": "MSG-018"
+  },
+  {
+    "message_id": "MSG-027",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-09-30T19:10:00+09:00",
+    "text": "타임라인 뷰 실제 API 연동했어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-028",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-01T13:40:00+09:00",
+    "text": "일정표 다시 보다가 발견했는데요, 발표자료 데모 화면 캡처가 10/5(하은님)로 잡혀 있는데, 캡처해야 할 정체 알림·Claim 검증 기능 완료는 10/9예요. 캡처가 기능보다 먼저라 순서가 거꾸로예요. 이렇게 바꾸면 어떨까요? ① 정체 알림 기능은 데모에 먼저 필요하니 10/7까지 앞당기기 ② 발표 본문(문제·접근·한계)은 캡처 없이 10/6까지 먼저 작성 ③ 데모 캡처는 10/10~11로 미루기. Claim 검증 API는 원래대로 10/10이고요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-029",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-10-01T13:55:00+09:00",
+    "text": "맞네요. 정체 알림은 7일까지 먼저 끝낼게요.",
+    "reply_to_message_id": "MSG-028"
+  },
+  {
+    "message_id": "MSG-030",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-10-01T14:05:00+09:00",
+    "text": "좋아요. 본문 먼저 쓰고 캡처는 나중에 넣을게요.",
+    "reply_to_message_id": "MSG-028"
+  },
+  {
+    "message_id": "MSG-031",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-01T14:10:00+09:00",
+    "text": "일정표 수정했어요. 지후님 Claim 검증 API는 원래대로 10일이에요.",
+    "reply_to_message_id": "MSG-028"
+  },
+  {
+    "message_id": "MSG-032",
+    "project_id": "P001",
+    "channel": "#docs",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-02T13:30:00+09:00",
+    "text": "중간보고서 최종 PDF 제출했습니다.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-033",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-02T16:10:00+09:00",
+    "text": "발표자료 틀 만들어서 공유드려요. 4단 구성으로 섹션 나눠 놨어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-034",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-10-05T14:10:00+09:00",
+    "text": "Evidence 검색 키워드 매칭 버전 올렸어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-035",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_A",
+    "recipient_ids": [],
+    "sent_at": "2026-10-07T12:10:00+09:00",
+    "text": "정체 알림 기능 완료했어요. 대시보드 알림 목록에 연동됐습니다.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-036",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-10-07T16:20:00+09:00",
+    "text": "Evidence 검색에 기간 필터 추가했어요. Claim 제출 전 기록만 찾도록요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-037",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-10-08T15:10:00+09:00",
+    "text": "발표 노트 초안 올렸어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-038",
+    "project_id": "P001",
+    "channel": "dm",
+    "channel_type": "DIRECT_MESSAGE",
+    "sender_id": "M_C",
+    "recipient_ids": [
+      "M_B"
+    ],
+    "sent_at": "2026-10-09T19:50:00+09:00",
+    "text": "도윤님 혹시 오늘 저녁에 Evidence 검색 쪽 잠깐 봐 주실 수 있을까요? 수요일에 기간 필터 넣고 나서부터 검색 결과가 계속 0건이에요. 필터 빼면 나와요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-039",
+    "project_id": "P001",
+    "channel": "dm",
+    "channel_type": "DIRECT_MESSAGE",
+    "sender_id": "M_B",
+    "recipient_ids": [
+      "M_C"
+    ],
+    "sent_at": "2026-10-09T20:30:00+09:00",
+    "text": "코드 봤는데, DB의 created_at은 밀리초 epoch로 저장돼 있고 search()에는 dt.timestamp()로 만든 초 단위 값이 들어가요. 그래서 모든 기록이 end_ts보다 커서 범위 밖으로 빠지는 것 같아요. 비교할 때 1000 곱하면 될 거예요.",
+    "reply_to_message_id": "MSG-038"
+  },
+  {
+    "message_id": "MSG-040",
+    "project_id": "P001",
+    "channel": "dm",
+    "channel_type": "DIRECT_MESSAGE",
+    "sender_id": "M_C",
+    "recipient_ids": [
+      "M_B"
+    ],
+    "sent_at": "2026-10-09T22:45:00+09:00",
+    "text": "고쳤어요! 기간 필터 넣어도 결과 제대로 나와요. 감사합니다.",
+    "reply_to_message_id": "MSG-038"
+  },
+  {
+    "message_id": "MSG-041",
+    "project_id": "P001",
+    "channel": "#dev",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_C",
+    "recipient_ids": [],
+    "sent_at": "2026-10-10T11:10:00+09:00",
+    "text": "Claim 검증 API 통합 테스트 추가했고 데모 데이터 12건 다 통과했어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-042",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_D",
+    "recipient_ids": [],
+    "sent_at": "2026-10-10T15:10:00+09:00",
+    "text": "데모 캡처 다 넣었어요.",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-043",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-12T23:20:00+09:00",
+    "text": "리허설 수정사항 다 반영됐어요. 내일 화이팅!",
+    "reply_to_message_id": null
+  },
+  {
+    "message_id": "MSG-044",
+    "project_id": "P001",
+    "channel": "#general",
+    "channel_type": "CHANNEL",
+    "sender_id": "M_B",
+    "recipient_ids": [],
+    "sent_at": "2026-10-13T18:00:00+09:00",
+    "text": "발표 수고하셨어요! 기여 내역 제출 폼은 목요일까지입니다.",
+    "reply_to_message_id": null
+  }
+]

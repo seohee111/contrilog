@@ -1,0 +1,394 @@
+[
+  {
+    "utterance_id": "UT-MT01-01",
+    "meeting_id": "MT01",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-02T18:02:00+09:00",
+    "text": "오늘은 주제 확정이랑 역할 분담부터 할게요. 지난주 투표한 대로 TeamLens로 가는 거 맞죠?"
+  },
+  {
+    "utterance_id": "UT-MT01-02",
+    "meeting_id": "MT01",
+    "sequence": 2,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-02T18:05:00+09:00",
+    "text": "네, 팀 협업 기록을 시간축으로 모아서 보여주는 대시보드요. 기여 내역 낼 때 기록이랑 대조해 볼 수 있게 하는 데까지가 목표였어요."
+  },
+  {
+    "utterance_id": "UT-MT01-03",
+    "meeting_id": "MT01",
+    "sequence": 3,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-02T18:10:00+09:00",
+    "text": "백엔드는 제가 할게요. 외부 연동은 GitHub부터 붙여 보고 싶어요. 회사 organization 레포에서 커밋 이력 가져오는 거요."
+  },
+  {
+    "utterance_id": "UT-MT01-04",
+    "meeting_id": "MT01",
+    "sequence": 4,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-02T18:14:00+09:00",
+    "text": "저는 데이터 쪽 할게요. 수집한 로그 정리하는 전처리랑 테스트용 샘플 데이터 만드는 거요."
+  },
+  {
+    "utterance_id": "UT-MT01-05",
+    "meeting_id": "MT01",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-02T18:18:00+09:00",
+    "text": "프론트는 제가 하고, 분석 실험도 같이 볼게요."
+  },
+  {
+    "utterance_id": "UT-MT01-06",
+    "meeting_id": "MT01",
+    "sequence": 6,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-02T18:22:00+09:00",
+    "text": "저는 문서랑 일정 관리, 배포 서버 세팅 맡을게요. 일정표는 오늘 밤에 공유 드라이브에 올리겠습니다."
+  },
+  {
+    "utterance_id": "UT-MT01-07",
+    "meeting_id": "MT01",
+    "sequence": 7,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-02T18:40:00+09:00",
+    "text": "다음 회의는 월요일 7시 설계 회의로 하죠. 각자 담당 부분 아이디어 가져와 주세요."
+  },
+  {
+    "utterance_id": "UT-MT02-01",
+    "meeting_id": "MT02",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-07T19:01:00+09:00",
+    "text": "설계 문서 목차는 지후님이 초안 잡아 주셨고, 오늘은 정체 알림 로직이랑 화면 구성 정하면 될 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT02-02",
+    "meeting_id": "MT02",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-07T19:05:00+09:00",
+    "text": "정체 알림은 처음엔 단순하게, Task 담당자의 문서 수정이나 커밋이 5일 이상 없으면 알림 보내는 걸로 생각했어요."
+  },
+  {
+    "utterance_id": "UT-MT02-03",
+    "meeting_id": "MT02",
+    "sequence": 3,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-07T19:09:00+09:00",
+    "text": "그렇게 하면 오탐이 많을 것 같아요. 로컬에서 작업하거나 휴가 기간이면 기록이 비는 게 당연하잖아요. 활동이 줄면 바로 정체라고 하지 말고 일단 후보로만 표시하고, 담당자한테 상황을 물어본 다음 실제로 막혀 있을 때만 확정하는 식으로 단계를 나누면 어떨까요?"
+  },
+  {
+    "utterance_id": "UT-MT02-04",
+    "meeting_id": "MT02",
+    "sequence": 4,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-07T19:12:00+09:00",
+    "text": "후보에서 확정으로 넘어가는 기준은 뭐로 해요? 답이 없으면요?"
+  },
+  {
+    "utterance_id": "UT-MT02-05",
+    "meeting_id": "MT02",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-07T19:14:00+09:00",
+    "text": "답이 없으면 계속 후보로 두고, 본인이 막혔다고 하거나 막힌 정황이 메시지로 확인될 때만 확정이요. 확정되면 그때 누가 도와줄 수 있는지 제안하고, 나중에 풀렸는지 다시 확인하고요."
+  },
+  {
+    "utterance_id": "UT-MT02-06",
+    "meeting_id": "MT02",
+    "sequence": 6,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-07T19:17:00+09:00",
+    "text": "좋네요. 그러면 상태가 정상, 후보, 확정, 해결 네 단계겠네요. 설계 문서 3.2절에 제가 반영해 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT02-07",
+    "meeting_id": "MT02",
+    "sequence": 7,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-07T19:30:00+09:00",
+    "text": "화면은 대시보드 하나에 Task 현황이랑 알림 목록 두는 걸로 일단 가죠. 세부 구성은 다음 주에 다시 봐요."
+  },
+  {
+    "utterance_id": "UT-MT02-08",
+    "meeting_id": "MT02",
+    "sequence": 8,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-07T19:45:00+09:00",
+    "text": "전처리는 이번 주 금요일까지 1차 버전 올릴게요."
+  },
+  {
+    "utterance_id": "UT-MT03-01",
+    "meeting_id": "MT03",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-14T19:02:00+09:00",
+    "text": "설계 문서는 금요일에 확정됐고, 이번 주부터 구현 들어가면 될 것 같아요. 진행 상황 부탁드려요."
+  },
+  {
+    "utterance_id": "UT-MT03-02",
+    "meeting_id": "MT03",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-14T19:05:00+09:00",
+    "text": "GitHub 연동 API는 OAuth 앱 등록하고 토큰 발급까지는 됐어요. 이번 주에 organization 레포 커밋 조회 붙일 예정이에요."
+  },
+  {
+    "utterance_id": "UT-MT03-03",
+    "meeting_id": "MT03",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-14T19:09:00+09:00",
+    "text": "전처리 1차는 올렸고, 이번 주부터 평가용 샘플 데이터셋 만들 거예요. 4인 가상 프로젝트 로그를 여러 개 생성해서 이벤트 라벨까지 붙이려고요."
+  },
+  {
+    "utterance_id": "UT-MT03-04",
+    "meeting_id": "MT03",
+    "sequence": 4,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-14T19:15:00+09:00",
+    "text": "그리고 화면 관련해서 제안이 하나 있는데요, 대시보드 첫 화면에 팀원별 활동을 시간축으로 쭉 보여주는 타임라인 뷰가 있으면 좋겠어요. 회의, 문서 수정, Task 상태 변경이 한 줄에 같이 보이게요. 누가 언제 뭘 했는지 한눈에 보일 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT03-05",
+    "meeting_id": "MT03",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-14T19:18:00+09:00",
+    "text": "오 그거 좋네요, 하은님 아이디어대로 가요. 프론트는 제가 맡고 있으니까 타임라인 뷰는 제가 구현해 볼게요."
+  },
+  {
+    "utterance_id": "UT-MT03-06",
+    "meeting_id": "MT03",
+    "sequence": 6,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-14T19:20:00+09:00",
+    "text": "그럼 타임라인 뷰 Task 새로 만들어서 서진님한테 배정할게요."
+  },
+  {
+    "utterance_id": "UT-MT03-07",
+    "meeting_id": "MT03",
+    "sequence": 7,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-14T19:25:00+09:00",
+    "text": "타임라인에 필요한 데이터는 나중에 대시보드 API에서 내려 주면 되겠네요."
+  },
+  {
+    "utterance_id": "UT-MT03-08",
+    "meeting_id": "MT03",
+    "sequence": 8,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-14T19:40:00+09:00",
+    "text": "다음 주 월요일에 다시 봬요. 추석 전 주라 각자 일정 확인 부탁드려요."
+  },
+  {
+    "utterance_id": "UT-MT04-01",
+    "meeting_id": "MT04",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-21T19:01:00+09:00",
+    "text": "추석 연휴 전 마지막 회의예요. 진행 상황 공유 부탁드려요."
+  },
+  {
+    "utterance_id": "UT-MT04-02",
+    "meeting_id": "MT04",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-21T19:04:00+09:00",
+    "text": "GitHub 연동은 지난주 화요일부터 organization 레포 조회가 403으로 막혀 있어요. organization에서 OAuth 앱 승인이 필요한데 관리자가 보안팀이라, 승인 요청 메일 보내 놓고 기다리는 중이에요."
+  },
+  {
+    "utterance_id": "UT-MT04-03",
+    "meeting_id": "MT04",
+    "sequence": 3,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-21T19:07:00+09:00",
+    "text": "그럼 데모는 일단 샘플 데이터로 가고, 승인 나면 붙이는 걸로 하죠."
+  },
+  {
+    "utterance_id": "UT-MT04-04",
+    "meeting_id": "MT04",
+    "sequence": 4,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-21T19:09:00+09:00",
+    "text": "네, 보안팀에 저도 한 번 더 메일 보내 볼게요. 지후님은 이번 주부터 대시보드 API 먼저 진행해 주시면 될 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT04-05",
+    "meeting_id": "MT04",
+    "sequence": 5,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-21T19:13:00+09:00",
+    "text": "샘플 데이터셋은 거의 다 됐어요. 수요일에 생성 스크립트랑 같이 올릴게요."
+  },
+  {
+    "utterance_id": "UT-MT04-06",
+    "meeting_id": "MT04",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-21T19:18:00+09:00",
+    "text": "타임라인 뷰는 레이아웃 잡았고, API 나오기 전까지 더미 데이터로 작업할게요."
+  },
+  {
+    "utterance_id": "UT-MT04-07",
+    "meeting_id": "MT04",
+    "sequence": 7,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-21T19:30:00+09:00",
+    "text": "연휴 동안은 각자 쉬고 28일 회의에서 봬요. 중간보고서 틀은 제가 미리 만들어 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT05-01",
+    "meeting_id": "MT05",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-28T19:02:00+09:00",
+    "text": "중간보고서 마감이 금요일이라 오늘은 보고서 분담이랑 최종 발표 준비를 정하면 될 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT05-02",
+    "meeting_id": "MT05",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-28T19:06:00+09:00",
+    "text": "대시보드 API는 /api/timeline이랑 /api/tasks 집계까지 됐어요. 내일 배포 서버에 올려 볼게요."
+  },
+  {
+    "utterance_id": "UT-MT05-03",
+    "meeting_id": "MT05",
+    "sequence": 3,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-28T19:09:00+09:00",
+    "text": "샘플 데이터셋으로 정체 예측 baseline 실험 시작했어요. 보고서 baseline 절은 제가 쓸게요."
+  },
+  {
+    "utterance_id": "UT-MT05-04",
+    "meeting_id": "MT05",
+    "sequence": 4,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-09-28T19:15:00+09:00",
+    "text": "최종 발표 구성 말인데요, '문제 → 접근 → 데모 → 한계와 향후 과제' 4단으로 가면 어떨까요? 경영진이 데모를 제일 궁금해하니까 접근은 짧게 하고 데모로 바로 넘어가고, 마지막에 한계를 솔직하게 말하는 구조요."
+  },
+  {
+    "utterance_id": "UT-MT05-05",
+    "meeting_id": "MT05",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-09-28T19:17:00+09:00",
+    "text": "좋아요. 데모를 중간에 넣는 게 집중도 면에서 나을 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT05-06",
+    "meeting_id": "MT05",
+    "sequence": 6,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-28T19:19:00+09:00",
+    "text": "네, 그 구성으로 가죠. 발표자료 Task 만들어서 저랑 하은님이 같이 맡을게요."
+  },
+  {
+    "utterance_id": "UT-MT05-07",
+    "meeting_id": "MT05",
+    "sequence": 7,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-09-28T19:22:00+09:00",
+    "text": "데모 시나리오는 정체 알림이랑 Claim 검증 화면 위주로 보여 주면 되겠네요."
+  },
+  {
+    "utterance_id": "UT-MT05-08",
+    "meeting_id": "MT05",
+    "sequence": 8,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-09-28T19:40:00+09:00",
+    "text": "보고서는 각자 담당 절을 목요일까지 써 주시고, 서식이랑 참고문헌 정리는 제가 마지막에 맞출게요."
+  },
+  {
+    "utterance_id": "UT-MT06-01",
+    "meeting_id": "MT06",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-10-05T19:01:00+09:00",
+    "text": "중간보고서는 금요일에 잘 제출했어요. 지난 목요일에 #general에 올린 일정 조정안대로 가는 걸로 확정할게요."
+  },
+  {
+    "utterance_id": "UT-MT06-02",
+    "meeting_id": "MT06",
+    "sequence": 2,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-10-05T19:04:00+09:00",
+    "text": "네, 정체 알림 기능은 7일까지 먼저 끝내는 걸로 잡았어요."
+  },
+  {
+    "utterance_id": "UT-MT06-03",
+    "meeting_id": "MT06",
+    "sequence": 3,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-10-05T19:07:00+09:00",
+    "text": "Claim 검증 API는 Evidence 검색 모듈 작업 중이에요. 10일 마감 맞춰 볼게요."
+  },
+  {
+    "utterance_id": "UT-MT06-04",
+    "meeting_id": "MT06",
+    "sequence": 4,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-10-05T19:10:00+09:00",
+    "text": "발표 본문은 내일까지 채우고, 데모 캡처는 조정된 일정대로 10일 이후에 넣을게요."
+  },
+  {
+    "utterance_id": "UT-MT06-05",
+    "meeting_id": "MT06",
+    "sequence": 5,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-10-05T19:14:00+09:00",
+    "text": "GitHub 연동은 아직 보안팀 답장이 없어요. 발표는 샘플 데이터로 가는 게 맞을 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT06-06",
+    "meeting_id": "MT06",
+    "sequence": 6,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-10-05T19:20:00+09:00",
+    "text": "그건 한계 슬라이드에 넣죠. 다음 주 월요일에 리허설해요."
+  },
+  {
+    "utterance_id": "UT-MT07-01",
+    "meeting_id": "MT07",
+    "sequence": 1,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-10-12T19:01:00+09:00",
+    "text": "내일 발표라 오늘은 리허설 한 번 돌리고 수정할 것만 정리할게요."
+  },
+  {
+    "utterance_id": "UT-MT07-02",
+    "meeting_id": "MT07",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-10-12T19:05:00+09:00",
+    "text": "Claim 검증 API는 토요일에 테스트 다 통과했어요. 데모 데이터로도 잘 돌아갑니다."
+  },
+  {
+    "utterance_id": "UT-MT07-03",
+    "meeting_id": "MT07",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-10-12T19:40:00+09:00",
+    "text": "리허설 해 보니까 데모 파트가 1분 정도 길어요. 접근 파트를 조금 줄일게요."
+  },
+  {
+    "utterance_id": "UT-MT07-04",
+    "meeting_id": "MT07",
+    "sequence": 4,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-10-12T19:45:00+09:00",
+    "text": "타임라인 데모는 화면 전환을 한 번 줄이면 될 것 같아요."
+  },
+  {
+    "utterance_id": "UT-MT07-05",
+    "meeting_id": "MT07",
+    "sequence": 5,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-10-12T20:10:00+09:00",
+    "text": "수정한 건 오늘 밤 12시까지 반영하고, 기여 내역은 발표 끝나고 목요일까지 폼으로 제출하는 거 잊지 마세요."
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim_id": "CLM-01",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "submitted_at": "2026-10-15T20:10:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "9월 7일 설계 회의에서 정체 알림을 '후보 → 확인 → 확정' 단계로 나누자는 아이디어를 냈고, 설계 문서의 정체 알림 로직에 반영되었습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-02",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "submitted_at": "2026-10-15T21:00:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "최종 발표의 '문제 → 접근 → 데모 → 한계' 4단 구성을 제가 제안했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-03",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "submitted_at": "2026-10-15T20:12:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "정체 예측 baseline 실험 중 전처리 단계의 데이터 누수(라벨 기준일 이후 활동이 피처에 포함)를 발견해 수정 방향을 제시했고, 전처리 코드가 수정되었습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-04",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "submitted_at": "2026-10-15T21:02:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "중간보고서의 참고문헌 형식 통일, 그림·표 번호와 본문 서식 정리, 회의록 요약 부록과 자료 링크 정리를 맡았습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-05",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "submitted_at": "2026-10-15T22:30:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "대시보드 API(/api/timeline 이벤트 통합 조회, /api/tasks 담당자별 집계)를 구현했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-06",
+    "project_id": "P001",
+    "member_id": "M_A",
+    "submitted_at": "2026-10-15T20:15:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "Timeline UI는 제가 아이디어를 제안하고 직접 구현했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-07",
+    "project_id": "P001",
+    "member_id": "M_B",
+    "submitted_at": "2026-10-15T21:05:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "Agent 기능 개발 일정과 발표자료 일정 사이의 순서 충돌을 발견해서 작업 순서를 조정했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-08",
+    "project_id": "P001",
+    "member_id": "M_C",
+    "submitted_at": "2026-10-15T22:32:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "Claim 검증 API와 Evidence 검색 모듈을 구현했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-09",
+    "project_id": "P001",
+    "member_id": "M_D",
+    "submitted_at": "2026-10-15T19:40:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "평가용 샘플 데이터셋(4인 가상 프로젝트 30개)과 생성 스크립트를 만들었습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  }
+]

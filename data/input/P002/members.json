@@ -1,0 +1,37 @@
+[
+  {
+    "member_id": "M_A",
+    "project_id": "P002",
+    "label": "A",
+    "name": "문가은",
+    "role": "PM (요구사항·일정·고객사 커뮤니케이션)"
+  },
+  {
+    "member_id": "M_B",
+    "project_id": "P002",
+    "label": "B",
+    "name": "장현우",
+    "role": "백엔드 (이벤트 수집 API·택배사 연동·DB)"
+  },
+  {
+    "member_id": "M_C",
+    "project_id": "P002",
+    "label": "C",
+    "name": "오수빈",
+    "role": "앱·웹 프론트엔드"
+  },
+  {
+    "member_id": "M_D",
+    "project_id": "P002",
+    "label": "D",
+    "name": "신재민",
+    "role": "데이터·ML (지연 예측·사유 분류)"
+  },
+  {
+    "member_id": "M_E",
+    "project_id": "P002",
+    "label": "E",
+    "name": "류다인",
+    "role": "플랫폼·QA (CI/CD·인프라·테스트)"
+  }
+]

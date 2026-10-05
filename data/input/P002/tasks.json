@@ -1,0 +1,938 @@
+[
+  {
+    "task_id": "T01",
+    "project_id": "P002",
+    "title": "요구사항 정의서",
+    "description": "서비스 범위·기능·비기능 요구사항 정리",
+    "created_by": "M_A",
+    "created_at": "2026-04-27T11:30:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-05-08",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-04-27T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-04-27T14:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-06T15:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-07T17:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-PRD"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T02",
+    "project_id": "P002",
+    "title": "배송 이벤트 수집 API",
+    "description": "택배사 배송 이벤트 수집·중복 제거·저장",
+    "created_by": "M_A",
+    "created_at": "2026-04-27T11:35:00+09:00",
+    "assignee_ids": [
+      "M_B"
+    ],
+    "due_date": "2026-05-15",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-04-27T11:35:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-04-28T09:40:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-13T16:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-14T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-EVENTAPI",
+      "DOC-MIGRATION"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T03",
+    "project_id": "P002",
+    "title": "앱 기본 구조·로그인",
+    "description": "앱 프로젝트 구조, 사내 SSO 로그인, 공통 API 클라이언트",
+    "created_by": "M_A",
+    "created_at": "2026-04-27T11:40:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-05-08",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-04-27T11:40:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-04-28T10:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-08T17:10:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-11T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-APPBASE"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T04",
+    "project_id": "P002",
+    "title": "CI/CD·스테이징 환경",
+    "description": "빌드·테스트·배포 파이프라인, 스테이징, API 게이트웨이, 앱 서명",
+    "created_by": "M_A",
+    "created_at": "2026-04-27T11:45:00+09:00",
+    "assignee_ids": [
+      "M_E"
+    ],
+    "due_date": "2026-05-15",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-04-27T11:45:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-04-28T09:30:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-15T17:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-CICD",
+      "DOC-GATEWAY",
+      "DOC-APPSIGN"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T05",
+    "project_id": "P002",
+    "title": "지연 예측 모델 v1",
+    "description": "배송 지연(약속 도착일 +1일 초과) 예측 모델 학습·평가",
+    "created_by": "M_A",
+    "created_at": "2026-04-28T11:00:00+09:00",
+    "assignee_ids": [
+      "M_D"
+    ],
+    "due_date": "2026-05-22",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-04-28T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-06T13:30:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-21T11:00:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-21T17:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-FEATURE",
+      "DOC-MODEL"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T06",
+    "project_id": "P002",
+    "title": "택배사 연동 어댑터",
+    "description": "누리택배·바로배송·한결로지스·온길익스프레스 4개사 배송 조회 어댑터",
+    "created_by": "M_A",
+    "created_at": "2026-05-06T11:40:00+09:00",
+    "assignee_ids": [
+      "M_B"
+    ],
+    "due_date": "2026-07-10",
+    "status": "IN_PROGRESS",
+    "status_history": [
+      {
+        "changed_at": "2026-05-06T11:40:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-11T10:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-CARRIER"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": [
+      {
+        "changed_at": "2026-05-29T14:05:00+09:00",
+        "changed_by": "M_A",
+        "from_due_date": "2026-05-29",
+        "to_due_date": "2026-06-12",
+        "note": "온길 운영 키 대기. 파일럿은 3개사로 시작"
+      },
+      {
+        "changed_at": "2026-06-11T16:00:00+09:00",
+        "changed_by": "M_A",
+        "from_due_date": "2026-06-12",
+        "to_due_date": "2026-07-10",
+        "note": "온길 운영 키 미수령. 정식 릴리스 이후 연동"
+      }
+    ]
+  },
+  {
+    "task_id": "T07",
+    "project_id": "P002",
+    "title": "알림 설정 화면",
+    "description": "알림 채널(앱 푸시·알림톡)과 빈도 설정 화면",
+    "created_by": "M_A",
+    "created_at": "2026-05-06T11:45:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-05-27",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-06T11:45:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-11T14:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-26T16:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-27T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-SETTINGSUI"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T08",
+    "project_id": "P002",
+    "title": "배송 상태 웹훅 수신",
+    "description": "택배사 웹훅 수신, 서명 검증, 이벤트 변환",
+    "created_by": "M_A",
+    "created_at": "2026-05-18T11:30:00+09:00",
+    "assignee_ids": [
+      "M_B"
+    ],
+    "due_date": "2026-05-29",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-18T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-18T13:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-27T11:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-28T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-WEBHOOK"
+    ],
+    "depends_on_task_ids": [
+      "T02"
+    ],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T09",
+    "project_id": "P002",
+    "title": "부하 테스트",
+    "description": "이벤트 수집 API·웹훅 부하 테스트 (목표 500rps)",
+    "created_by": "M_A",
+    "created_at": "2026-05-18T11:35:00+09:00",
+    "assignee_ids": [
+      "M_E"
+    ],
+    "due_date": "2026-05-29",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-18T11:35:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-19T10:30:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-28T11:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-LOADTEST"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T10",
+    "project_id": "P002",
+    "title": "파일럿 고객 온보딩 가이드",
+    "description": "파일럿 고객사용 계정 발급·알림 템플릿 설정 가이드",
+    "created_by": "M_A",
+    "created_at": "2026-05-18T11:40:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-05-29",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-18T11:40:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-19T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-27T15:10:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-28T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-ONBOARD"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T11",
+    "project_id": "P002",
+    "title": "배송 추적 지도 화면",
+    "description": "지도 위 택배 현재 위치·상태별 마커·예상 도착 시간 표시",
+    "created_by": "M_A",
+    "created_at": "2026-05-18T11:45:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-06-05",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-18T11:45:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-26T17:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-02T11:10:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-04T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-TRACKMAP"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T12",
+    "project_id": "P002",
+    "title": "지연 사유 분류 규칙",
+    "description": "배송 이벤트 메모로 지연 사유 코드를 분류하는 규칙",
+    "created_by": "M_A",
+    "created_at": "2026-05-26T11:30:00+09:00",
+    "assignee_ids": [
+      "M_D"
+    ],
+    "due_date": "2026-06-05",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-26T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-26T13:00:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-02T14:10:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-04T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-REASON"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T13",
+    "project_id": "P002",
+    "title": "모니터링 대시보드",
+    "description": "수집·웹훅·API 지표 대시보드와 알림 규칙",
+    "created_by": "M_A",
+    "created_at": "2026-05-26T11:35:00+09:00",
+    "assignee_ids": [
+      "M_E"
+    ],
+    "due_date": "2026-06-05",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-05-26T11:35:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-05-26T14:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-05T11:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-MONITOR"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T14",
+    "project_id": "P002",
+    "title": "앱 푸시 권한 처리",
+    "description": "Android·iOS 알림 권한 요청과 푸시 수신 처리",
+    "created_by": "M_A",
+    "created_at": "2026-06-01T11:30:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-06-12",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-01T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-02T10:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-11T10:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-11T17:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-PUSH"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T15",
+    "project_id": "P002",
+    "title": "정산 리포트 배치",
+    "description": "택배사별 월간 지연 건수 리포트 배치 (데이터 웨어하우스 기준)",
+    "created_by": "M_A",
+    "created_at": "2026-06-01T11:35:00+09:00",
+    "assignee_ids": [
+      "M_B"
+    ],
+    "due_date": "2026-06-12",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-01T11:35:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-02T09:30:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-10T15:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-11T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-SETTLE"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T16",
+    "project_id": "P002",
+    "title": "장애 대응 런북·롤백 리허설",
+    "description": "장애 등급·연락 체계 정리와 스테이징 롤백 리허설",
+    "created_by": "M_A",
+    "created_at": "2026-06-01T11:40:00+09:00",
+    "assignee_ids": [
+      "M_E"
+    ],
+    "due_date": "2026-06-12",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-01T11:40:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-04T09:30:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-10T10:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-11T15:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-RUNBOOK",
+      "DOC-ROLLBACK"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T17",
+    "project_id": "P002",
+    "title": "파일럿 고객 피드백 정리",
+    "description": "사내 베타·파일럿 고객사 피드백 수집과 반영 여부 정리",
+    "created_by": "M_A",
+    "created_at": "2026-06-01T11:45:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-06-15",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-01T11:45:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-02T09:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-11T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-PILOTFB"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T18",
+    "project_id": "P002",
+    "title": "배송 알림 E2E 통합 테스트",
+    "description": "Android·iOS 실기기에서 지연 알림 수신까지 E2E 검증",
+    "created_by": "M_A",
+    "created_at": "2026-06-08T11:30:00+09:00",
+    "assignee_ids": [
+      "M_E",
+      "M_C"
+    ],
+    "due_date": "2026-06-17",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-08T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-08T14:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-16T15:00:00+09:00",
+        "changed_by": "M_E",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-17T11:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-E2E"
+    ],
+    "depends_on_task_ids": [
+      "T14"
+    ],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T19",
+    "project_id": "P002",
+    "title": "지연 예측 모델 v2 재학습",
+    "description": "2026년 5월까지의 데이터로 재학습, 운영 모델 교체",
+    "created_by": "M_A",
+    "created_at": "2026-06-08T11:35:00+09:00",
+    "assignee_ids": [
+      "M_D"
+    ],
+    "due_date": "2026-06-18",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-08T11:35:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-08T13:00:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-16T15:10:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-17T10:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-MODEL"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T20",
+    "project_id": "P002",
+    "title": "프로젝트 회고 문서",
+    "description": "릴리스 회고와 기여 내역 정리",
+    "created_by": "M_A",
+    "created_at": "2026-06-15T11:30:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-06-19",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-06-15T11:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-15T14:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-06-19T15:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-RETRO"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  }
+]

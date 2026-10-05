@@ -1,0 +1,50 @@
+[
+  {
+    "claim_id": "CLM-01",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "submitted_at": "2026-06-18T17:00:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "웹훅 서명 검증이 스테이징에서만 401로 실패할 때, 게이트웨이의 요청 본문 변환 설정이 원인인 걸 찾아서 웹훅 경로를 변환 대상에서 빼 현우님이 문제를 해결하도록 도왔습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-02",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "submitted_at": "2026-06-19T10:00:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "배송 추적 지도 화면을 구현했고, 배송 상태별 마커 색상 아이디어도 제가 냈습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-03",
+    "project_id": "P002",
+    "member_id": "M_D",
+    "submitted_at": "2026-06-19T11:00:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "지연 예측 모델 v1과 v2를 학습하고 결과를 정리했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  },
+  {
+    "claim_id": "CLM-04",
+    "project_id": "P002",
+    "member_id": "M_A",
+    "submitted_at": "2026-06-19T14:00:00+09:00",
+    "source": "SELF_REPORT_FORM",
+    "source_message_id": null,
+    "text": "온길익스프레스 운영 키가 늦어지자 파일럿 택배사 범위를 3개사로 줄이고 택배사 연동 일정을 옮기는 조정을 했습니다.",
+    "parent_claim_id": null,
+    "claimed_type": null,
+    "status": "PENDING_VERIFICATION"
+  }
+]

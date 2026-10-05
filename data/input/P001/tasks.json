@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "T01",
+    "project_id": "P001",
+    "title": "설계 문서 작성",
+    "description": "TeamLens 설계 문서 v1.0 작성 (데이터 수집 범위, 분석 로직, 화면 구성)",
+    "created_by": "M_B",
+    "created_at": "2026-09-02T18:45:00+09:00",
+    "assignee_ids": [
+      "M_C",
+      "M_A",
+      "M_D"
+    ],
+    "due_date": "2026-09-11",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-02T18:45:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-04T16:30:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-11T18:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-DESIGN"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T02",
+    "project_id": "P001",
+    "title": "데이터 전처리 파이프라인",
+    "description": "회의·문서·Task·메시지 로그 통합 및 활동량 피처 생성",
+    "created_by": "M_B",
+    "created_at": "2026-09-02T18:46:00+09:00",
+    "assignee_ids": [
+      "M_D"
+    ],
+    "due_date": "2026-09-12",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-02T18:46:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-07T20:00:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-12T10:10:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-29T12:00:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "DONE",
+        "to_status": "IN_PROGRESS",
+        "note": "피처 window 범위 수정 필요 (#dev 논의)"
+      },
+      {
+        "changed_at": "2026-09-30T10:50:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-PREPROCESS"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T03",
+    "project_id": "P001",
+    "title": "GitHub 연동 API",
+    "description": "회사 GitHub organization 레포의 커밋 이력을 가져오는 연동 API",
+    "created_by": "M_B",
+    "created_at": "2026-09-02T18:47:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-09-25",
+    "status": "IN_PROGRESS",
+    "status_history": [
+      {
+        "changed_at": "2026-09-02T18:47:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-08T15:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-GITHUB"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T04",
+    "project_id": "P001",
+    "title": "평가용 샘플 데이터셋 구축",
+    "description": "4인 가상 프로젝트 로그 생성 스크립트와 이벤트 라벨이 붙은 샘플 데이터셋",
+    "created_by": "M_B",
+    "created_at": "2026-09-14T19:30:00+09:00",
+    "assignee_ids": [
+      "M_D"
+    ],
+    "due_date": "2026-09-25",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-14T19:30:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-14T21:50:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-23T13:30:00+09:00",
+        "changed_by": "M_D",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-DATAGEN",
+      "DOC-DATASET"
+    ],
+    "depends_on_task_ids": [
+      "T02"
+    ],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T05",
+    "project_id": "P001",
+    "title": "타임라인 뷰 구현",
+    "description": "대시보드 첫 화면의 팀원별 이벤트 타임라인 뷰",
+    "created_by": "M_B",
+    "created_at": "2026-09-14T19:21:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-10-02",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-14T19:21:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-17T20:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-01T11:40:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-01T18:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-TIMELINE"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T06",
+    "project_id": "P001",
+    "title": "대시보드 API",
+    "description": "/api/tasks, /api/timeline 구현 및 배포",
+    "created_by": "M_B",
+    "created_at": "2026-09-21T19:10:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-10-02",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-21T19:10:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-22T10:30:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-29T22:10:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "IN_REVIEW",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-30T12:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_REVIEW",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-DASHAPI",
+      "DOC-NGINX"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T07",
+    "project_id": "P001",
+    "title": "중간보고서 작성",
+    "description": "중간보고서 작성 및 제출 (각자 담당 장 작성, 서식·참고문헌 통일)",
+    "created_by": "M_B",
+    "created_at": "2026-09-21T19:32:00+09:00",
+    "assignee_ids": [
+      "M_B",
+      "M_A",
+      "M_C",
+      "M_D"
+    ],
+    "due_date": "2026-10-02",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-21T19:32:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-22T20:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-02T13:30:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-MIDREPORT"
+    ],
+    "depends_on_task_ids": [],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T08",
+    "project_id": "P001",
+    "title": "정체 예측 baseline 실험",
+    "description": "샘플 데이터셋으로 정체 예측 baseline 모델 학습·검증",
+    "created_by": "M_A",
+    "created_at": "2026-09-23T14:00:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-10-01",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-23T14:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-28T14:30:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-09-30T15:10:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-BASELINE"
+    ],
+    "depends_on_task_ids": [
+      "T04"
+    ],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T09",
+    "project_id": "P001",
+    "title": "최종 발표자료",
+    "description": "최종 발표 슬라이드 및 발표 노트, 데모 화면 캡처",
+    "created_by": "M_B",
+    "created_at": "2026-09-28T19:20:00+09:00",
+    "assignee_ids": [
+      "M_B",
+      "M_D"
+    ],
+    "due_date": "2026-10-12",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-28T19:20:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-02T16:00:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-12T23:30:00+09:00",
+        "changed_by": "M_B",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-SLIDES"
+    ],
+    "depends_on_task_ids": [
+      "T10",
+      "T11"
+    ],
+    "due_date_history": []
+  },
+  {
+    "task_id": "T10",
+    "project_id": "P001",
+    "title": "정체 알림 기능",
+    "description": "정체 후보·확인 요청·확정·해결 상태 전이와 대시보드 알림 목록",
+    "created_by": "M_B",
+    "created_at": "2026-09-28T19:24:00+09:00",
+    "assignee_ids": [
+      "M_A"
+    ],
+    "due_date": "2026-10-07",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-28T19:24:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-02T09:00:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-07T12:10:00+09:00",
+        "changed_by": "M_A",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-ALERT"
+    ],
+    "depends_on_task_ids": [
+      "T06"
+    ],
+    "due_date_history": [
+      {
+        "changed_at": "2026-10-01T14:00:00+09:00",
+        "changed_by": "M_B",
+        "from_due_date": "2026-10-09",
+        "to_due_date": "2026-10-07",
+        "note": "발표 준비 일정 순서 조정 (#general 논의)"
+      }
+    ]
+  },
+  {
+    "task_id": "T11",
+    "project_id": "P001",
+    "title": "Claim 검증 API",
+    "description": "제출된 기여 내역을 기록과 대조하는 검증 API (Evidence 검색 포함)",
+    "created_by": "M_B",
+    "created_at": "2026-09-28T19:25:00+09:00",
+    "assignee_ids": [
+      "M_C"
+    ],
+    "due_date": "2026-10-10",
+    "status": "DONE",
+    "status_history": [
+      {
+        "changed_at": "2026-09-28T19:25:00+09:00",
+        "changed_by": "M_B",
+        "from_status": null,
+        "to_status": "TODO",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-02T15:00:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "TODO",
+        "to_status": "IN_PROGRESS",
+        "note": null
+      },
+      {
+        "changed_at": "2026-10-10T11:15:00+09:00",
+        "changed_by": "M_C",
+        "from_status": "IN_PROGRESS",
+        "to_status": "DONE",
+        "note": null
+      }
+    ],
+    "related_document_ids": [
+      "DOC-CLAIMAPI",
+      "DOC-EVSEARCH"
+    ],
+    "depends_on_task_ids": [
+      "T06"
+    ],
+    "due_date_history": []
+  }
+]

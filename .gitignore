@@ -1,0 +1,18 @@
+# 가상환경 · 캐시
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.cache/
+
+# 비밀 정보 (API 키)
+.env
+
+# Agent Memory 실행 결과
+data/agent_memory/*
+!data/agent_memory/.gitkeep
+
+# 팀 내부 자료 · 중복 산출물
+인수인계 문서/
+submission/6_소스코드_contrilog.zip
+reports/**/raw/

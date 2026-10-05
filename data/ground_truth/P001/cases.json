@@ -1,0 +1,92 @@
+[
+  {
+    "case_id": "CASE01",
+    "title": "단계형 정체 탐지 아이디어 (A, IDEA)",
+    "scenario": "A가 9/7 설계 회의에서 정체를 '후보 → 확인 → 확정 → 해결' 단계로 나누자고 제안했고, C가 9/9 설계 문서 3.2절에 반영했다. A는 10/15 이 아이디어를 Claim으로 제출했다.",
+    "contribution_ids": ["GTC-01"],
+    "claim_judgment_ids": ["GTCL-01"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["설계 문서 리비전 작성자는 C이지만 아이디어 기여자는 A다. 리비전 작성자를 아이디어 제안자로 귀속하면 오답."]
+  },
+  {
+    "case_id": "CASE02",
+    "title": "발표 구조 Claim의 근거 부족 (B)",
+    "scenario": "9/28 회의에서 D가 발표 4단 구성을 처음 제안했고 B는 동의 후 슬라이드 틀을 만들었다. B는 10/15 자신이 4단 구성을 제안했다고 Claim했지만 B를 제안 행위와 연결하는 기록은 없다.",
+    "contribution_ids": ["GTC-02"],
+    "claim_judgment_ids": ["GTCL-02"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["B의 슬라이드 템플릿 작업(REV-048, MSG-033)은 실행 기록이지 아이디어 제안의 근거가 아니다."]
+  },
+  {
+    "case_id": "CASE03",
+    "title": "GitHub 연동 API 실제 Block (C)",
+    "scenario": "C의 GitHub 연동 작업은 9/15 organization 레포 조회가 403으로 거부된 뒤 기록이 끊겼다. 확인 결과 회사 organization의 OAuth 앱 접근 제한으로 관리자(보안팀) 승인이 필요했고, 승인은 프로젝트 종료 시점까지 오지 않았다.",
+    "contribution_ids": [],
+    "claim_judgment_ids": [],
+    "stagnation_ids": ["GTS-01"],
+    "evaluation_notes": ["팀 내부 지원으로 해결할 수 없는 외부 의존 Block이므로 개입 제안 내용은 채점하지 않는다.", "C는 같은 기간 다른 Task(T06)에서는 정상 활동했다. 정체는 (팀원, Task) 단위로 판단해야 한다."]
+  },
+  {
+    "case_id": "CASE04",
+    "title": "로컬 작업으로 인한 활동 감소 — 정체 False Positive (D)",
+    "scenario": "D의 샘플 데이터셋 작업은 9/14 이후 9일간 공유 기록이 없었지만, 실제로는 로컬에서 생성 스크립트를 돌리며 라벨 검수 중이었고 9/23 스크립트와 데이터셋을 한 번에 업로드했다.",
+    "contribution_ids": ["GTC-03"],
+    "claim_judgment_ids": ["GTCL-10"],
+    "stagnation_ids": ["GTS-02"],
+    "evaluation_notes": ["후보(STAGNATION_CANDIDATE)로 올리는 것은 허용되지만 CONFIRMED_BLOCK으로 확정하면 오답.", "9/24~26 추석 연휴의 전원 활동 감소도 정체 근거가 아니다."]
+  },
+  {
+    "case_id": "CASE05",
+    "title": "적은 작업량의 데이터 누수 발견 (A, REVIEW)",
+    "scenario": "A는 baseline 검증 F1이 비정상적으로 높은 것을 보고 전처리 피처 window가 라벨 기준일 이후 3일까지 포함되는 누수를 찾아냈다. D가 다음 날 전처리 코드를 수정했고 재실험 F1은 0.71이 되었다.",
+    "contribution_ids": ["GTC-04"],
+    "claim_judgment_ids": ["GTCL-03"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["A의 해당 기여는 문자 수가 작다. 변경량으로 기여 여부를 판단하면 안 된다."]
+  },
+  {
+    "case_id": "CASE06",
+    "title": "많은 문서 수정량 = 자료·형식 정리 (B, EXECUTION)",
+    "scenario": "B는 중간보고서에 9회, 2만5천자 이상 수정을 했지만 대부분 참고문헌 형식, 그림·표 번호, 서식, 부록·링크 정리였다.",
+    "contribution_ids": ["GTC-05"],
+    "claim_judgment_ids": ["GTCL-04"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["유형은 EXECUTION이다. 수정량을 근거로 '가장 큰 기여', 중요도, 순위를 언급하는 출력은 원칙 위반으로 처리한다."]
+  },
+  {
+    "case_id": "CASE07",
+    "title": "Dashboard API 구현과 문제 해결 지원 (C EXECUTION, B SUPPORT)",
+    "scenario": "C가 대시보드 API를 구현해 배포하던 중 배포 서버에서만 CORS preflight가 실패했다. B가 nginx에서 OPTIONS 요청이 405로 막힌 것을 찾아 설정을 고쳐 해결했다.",
+    "contribution_ids": ["GTC-06", "GTC-07"],
+    "claim_judgment_ids": ["GTCL-05"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["B는 이 지원을 Claim하지 않았다. Claim이 없어도 기록에서 SUPPORT 기여를 찾아야 한다.", "C는 이 기간 계속 활동 중이었으므로 정체 후보가 아니다."]
+  },
+  {
+    "case_id": "CASE08",
+    "title": "Timeline UI: 아이디어는 D, 구현은 A",
+    "scenario": "9/14 회의에서 D가 타임라인 뷰를 제안했고 A가 '하은님 아이디어대로' 구현하겠다고 했다. A는 다음 날 설계 문서에 타임라인 섹션을 작성자 표기와 함께 추가했고, 이후 구현을 완료했다. A는 '아이디어를 제안하고 구현했다'고 Claim했다.",
+    "contribution_ids": ["GTC-08", "GTC-09"],
+    "claim_judgment_ids": ["GTCL-06", "GTCL-07"],
+    "stagnation_ids": [],
+    "evaluation_notes": ["CLM-06은 IDEA와 EXECUTION 두 개의 atomic claim으로 분리되어야 한다.", "A의 설계 문서 섹션·메시지는 IDEA 주장을 겉보기에 뒷받침하고, 회의 발언은 반박한다 → CONFLICTING_EVIDENCE."]
+  },
+  {
+    "case_id": "CASE09",
+    "title": "일정 의존성 충돌 발견과 순서 조정 (B, COORDINATION)",
+    "scenario": "B는 데모 캡처(10/5)가 캡처 대상 기능 완료(10/9)보다 앞에 잡힌 것을 발견하고, 정체 알림 기능을 10/7로 앞당기고 본문 먼저·캡처 나중으로 순서를 바꾸자고 제안해 일정표에 반영했다. 10/5 회의에서 확정되었다.",
+    "contribution_ids": ["GTC-10"],
+    "claim_judgment_ids": ["GTCL-08"],
+    "stagnation_ids": [],
+    "evaluation_notes": []
+  },
+  {
+    "case_id": "CASE10",
+    "title": "마감 직전 Claim 검증 API 정체 → 확인 → 지원 → 해결 (C, B)",
+    "scenario": "C는 10/7 Evidence 검색에 기간 필터를 넣은 뒤 결과가 0건이 되는 문제로 막혔고 이후 기록이 끊겼다. 확인 결과 실제 Block이었고, B의 지원으로 ms/s 단위 불일치를 찾아 10/9 밤 수정했다.",
+    "contribution_ids": ["GTC-11", "GTC-12"],
+    "claim_judgment_ids": ["GTCL-09"],
+    "stagnation_ids": ["GTS-03"],
+    "evaluation_notes": ["기대 흐름: STAGNATION_CANDIDATE → CONFIRMED_BLOCK → 개입(B 지원 제안) → RESOLVED", "10/9는 한글날 공휴일이지만 마감(10/10) 직전이므로 공휴일을 이유로 후보 판단을 보류하면 안 된다."]
+  }
+]

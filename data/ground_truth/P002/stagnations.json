@@ -1,0 +1,681 @@
+[
+  {
+    "gt_stagnation_id": "GTS-01",
+    "case_id": "CASE01",
+    "project_id": "P002",
+    "member_id": "M_D",
+    "task_id": "T05",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-05-22T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-027",
+      "REV-042",
+      "MSG-014",
+      "T05"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T05",
+        "responder_id": "M_D",
+        "about_member_id": null,
+        "expected_content": "학습 클러스터에서 탐색이 도는 중이라 기록이 없었을 뿐 계획대로 진행 중",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-02",
+    "case_id": "CASE02",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "task_id": "T07",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-05-28T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-034",
+      "REV-044",
+      "MSG-016",
+      "T07"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T07",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "피그마로 시안 작업 중이며 일정 문제 없음",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-03",
+    "case_id": "CASE02",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "task_id": "T09",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-05-29T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-043",
+      "REV-055",
+      "MSG-024",
+      "T09"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T09",
+        "responder_id": "M_E",
+        "about_member_id": null,
+        "expected_content": "로컬에서 부하 테스트를 돌리는 중, 목요일 리포트 예정",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-04",
+    "case_id": "CASE02",
+    "project_id": "P002",
+    "member_id": "M_A",
+    "task_id": "T10",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-05-29T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-038",
+      "REV-052",
+      "UT-MT05-05",
+      "T10"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T10",
+        "responder_id": "M_A",
+        "about_member_id": null,
+        "expected_content": "노션에서 고객사와 함께 작성 중, 수요일에 공유 문서로 이전",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-05",
+    "case_id": "CASE03",
+    "project_id": "P002",
+    "member_id": "M_B",
+    "task_id": "T08",
+    "is_actual_block": true,
+    "block_started_at": "2026-05-20T16:40:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "API 게이트웨이의 요청 본문 변환(JSON 정규화)이 웹훅 경로에도 적용되어, 앱이 받은 본문이 택배사가 서명한 원문과 달라 HMAC 검증이 항상 실패(401)",
+    "evaluation_as_of": "2026-05-29T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_E",
+      "earliest_at": "2026-05-20T16:40:00+09:00"
+    },
+    "resolved_at": "2026-05-27T10:30:00+09:00",
+    "expected_evidence_ids": [
+      "REV-040",
+      "REV-028",
+      "REV-047",
+      "REV-051",
+      "MSG-015",
+      "MSG-020",
+      "T08"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T08",
+        "responder_id": "M_B",
+        "about_member_id": null,
+        "expected_content": "스테이징에서만 서명 검증 401, 원인을 못 찾아 막힘",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      },
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T08",
+        "responder_id": "M_E",
+        "about_member_id": "M_B",
+        "expected_content": "게이트웨이 본문 변환을 의심하며 지원 수락",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      }
+    ],
+    "inaccessible_source_ids": [
+      "MSG-018",
+      "MSG-019"
+    ],
+    "candidate_expected": true,
+    "block_kind": "INTERNAL_ISSUE"
+  },
+  {
+    "gt_stagnation_id": "GTS-06",
+    "case_id": "CASE04",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "task_id": "T11",
+    "is_actual_block": true,
+    "block_started_at": "2026-05-29T10:20:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "운영 ingress에 추가한 Content-Security-Policy의 img-src에 지도 타일 도메인이 없어 운영에서만 타일 로드가 차단됨",
+    "evaluation_as_of": "2026-06-05T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_E",
+      "earliest_at": "2026-05-29T10:20:00+09:00"
+    },
+    "resolved_at": "2026-06-02T09:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-057",
+      "REV-062",
+      "REV-064",
+      "MSG-028",
+      "MSG-032",
+      "MSG-033",
+      "T11"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "운영에서만 지도 타일이 정책 위반으로 차단되어 막힘",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      },
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_E",
+        "about_member_id": "M_C",
+        "expected_content": "본인이 넣은 CSP 헤더를 원인으로 짚으며 지원 수락",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "INTERNAL_ISSUE"
+  },
+  {
+    "gt_stagnation_id": "GTS-07",
+    "case_id": "CASE05",
+    "project_id": "P002",
+    "member_id": "M_B",
+    "task_id": "T06",
+    "is_actual_block": true,
+    "block_started_at": "2026-05-21T09:00:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "외부 업체(온길익스프레스)가 운영 API 키를 발급하지 않음 — 프로젝트 종료까지 회신 없음",
+    "evaluation_as_of": "2026-06-19T12:00:00+09:00",
+    "expected_final_state": "CONFIRMED_BLOCK",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK"
+    ],
+    "forbidden_states": [
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-041",
+      "MSG-013",
+      "MSG-017",
+      "MSG-029",
+      "MSG-043",
+      "T06"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T06",
+        "responder_id": "M_B",
+        "about_member_id": null,
+        "expected_content": "온길 운영 키 미발급, 업체 회신 없음으로 진행 불가",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "EXTERNAL_DEPENDENCY"
+  },
+  {
+    "gt_stagnation_id": "GTS-08",
+    "case_id": "CASE06",
+    "project_id": "P002",
+    "member_id": "M_D",
+    "task_id": "T12",
+    "is_actual_block": true,
+    "block_started_at": "2026-05-28T11:20:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "지연 사유 코드가 여러 개 해당할 때의 우선순위가 요구사항에 정해지지 않아 분류 기준을 확정할 수 없음 (기획 결정 필요)",
+    "evaluation_as_of": "2026-06-05T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_A",
+      "earliest_at": "2026-05-28T11:20:00+09:00"
+    },
+    "resolved_at": "2026-06-01T15:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-020",
+      "REV-056",
+      "REV-060",
+      "REV-061",
+      "MSG-025",
+      "UT-MT06-02",
+      "T12"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T12",
+        "responder_id": "M_D",
+        "about_member_id": null,
+        "expected_content": "사유 중복 시 분류 기준이 없어 막힘, 기획 기준 필요",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "INTERNAL_ISSUE"
+  },
+  {
+    "gt_stagnation_id": "GTS-09",
+    "case_id": "CASE07",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "task_id": "T13",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-06-05T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-053",
+      "REV-074",
+      "MSG-030",
+      "T13"
+    ],
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": [],
+    "candidate_expected": null,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-10",
+    "case_id": "CASE08",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "task_id": "T14",
+    "is_actual_block": true,
+    "block_started_at": "2026-06-04T15:00:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "iOS App ID에 Push Notifications capability가 없어 프로비저닝 프로필·entitlements에 푸시 권한이 빠짐",
+    "evaluation_as_of": "2026-06-12T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_E",
+      "earliest_at": "2026-06-04T15:00:00+09:00"
+    },
+    "resolved_at": "2026-06-10T16:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-031",
+      "REV-069",
+      "REV-083",
+      "REV-085",
+      "MSG-038",
+      "MSG-042",
+      "T14"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T14",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "iOS에서만 푸시 권한 팝업이 뜨지 않아 막힘",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      },
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T14",
+        "responder_id": "M_E",
+        "about_member_id": "M_C",
+        "expected_content": "앱 서명·프로비저닝 설정자로서 지원 수락",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "INTERNAL_ISSUE"
+  },
+  {
+    "gt_stagnation_id": "GTS-11",
+    "case_id": "CASE09",
+    "project_id": "P002",
+    "member_id": "M_B",
+    "task_id": "T15",
+    "is_actual_block": true,
+    "block_started_at": "2026-06-04T15:00:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "데이터플랫폼팀(다른 팀)의 원천 테이블 스키마 변경 확정 대기",
+    "evaluation_as_of": "2026-06-12T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": null,
+    "resolved_at": "2026-06-09T16:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-072",
+      "REV-080",
+      "MSG-035",
+      "MSG-040",
+      "UT-MT07-03",
+      "T15"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T15",
+        "responder_id": "M_B",
+        "about_member_id": null,
+        "expected_content": "다른 팀의 스키마 확정을 기다리느라 진행 못 함 (외부 의존)",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "EXTERNAL_DEPENDENCY"
+  },
+  {
+    "gt_stagnation_id": "GTS-12",
+    "case_id": "CASE10",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "task_id": "T16",
+    "is_actual_block": true,
+    "block_started_at": "2026-06-04T18:10:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "파티션 테이블로 바꾼 V7 마이그레이션에 down 스크립트가 없어 롤백 리허설 실패",
+    "evaluation_as_of": "2026-06-12T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": {
+      "intervention_type": "SUPPORT",
+      "supporter_member_id": "M_B",
+      "earliest_at": "2026-06-04T18:10:00+09:00"
+    },
+    "resolved_at": "2026-06-09T11:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-026",
+      "REV-073",
+      "REV-078",
+      "REV-081",
+      "MSG-036",
+      "MSG-039",
+      "T16"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T16",
+        "responder_id": "M_E",
+        "about_member_id": null,
+        "expected_content": "V7 down 마이그레이션 실패로 롤백 리허설이 멈춤",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      },
+      {
+        "kind": "SUPPORT_REPLY",
+        "task_id": "T16",
+        "responder_id": "M_B",
+        "about_member_id": "M_E",
+        "expected_content": "V7 작성자로서 지원 수락",
+        "question_intent": null,
+        "expected_semantic_outcome": "ACCEPTS_SUPPORT"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "INTERNAL_ISSUE"
+  },
+  {
+    "gt_stagnation_id": "GTS-13",
+    "case_id": "CASE11",
+    "project_id": "P002",
+    "member_id": "M_A",
+    "task_id": "T17",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-06-12T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-071",
+      "REV-084",
+      "T17"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T17",
+        "responder_id": "M_A",
+        "about_member_id": null,
+        "expected_content": "고객사 통화 완료, 미해결 이슈 0건, 최종본 업로드 예정",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": null
+  },
+  {
+    "gt_stagnation_id": "GTS-14",
+    "case_id": "CASE12",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "task_id": "T18",
+    "is_actual_block": true,
+    "block_started_at": "2026-06-10T10:00:00+09:00",
+    "block_start_tolerance_hours": 24,
+    "block_cause": "iOS 실기기 테스트용 디바이스팜 계정 만료 — 구매팀 갱신 결재 대기",
+    "evaluation_as_of": "2026-06-17T00:00:00+09:00",
+    "expected_final_state": "RESOLVED",
+    "expected_state_sequence": [
+      "STAGNATION_CANDIDATE",
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "forbidden_states": [],
+    "expected_intervention": null,
+    "resolved_at": "2026-06-16T14:00:00+09:00",
+    "expected_evidence_ids": [
+      "REV-079",
+      "REV-088",
+      "MSG-041",
+      "MSG-045",
+      "MSG-047",
+      "UT-MT08-02",
+      "T18"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T18",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "디바이스팜 갱신 결재 대기로 iOS E2E 진행 불가",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_BLOCKED"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": true,
+    "block_kind": "EXTERNAL_DEPENDENCY"
+  },
+  {
+    "gt_stagnation_id": "GTS-15",
+    "case_id": "CASE13",
+    "project_id": "P002",
+    "member_id": "M_D",
+    "task_id": "T19",
+    "is_actual_block": false,
+    "block_started_at": null,
+    "block_start_tolerance_hours": 24,
+    "block_cause": null,
+    "evaluation_as_of": "2026-06-17T00:00:00+09:00",
+    "expected_final_state": "NORMAL",
+    "expected_state_sequence": null,
+    "forbidden_states": [
+      "CONFIRMED_BLOCK",
+      "RESOLVED"
+    ],
+    "expected_intervention": null,
+    "resolved_at": null,
+    "expected_evidence_ids": [
+      "REV-086",
+      "REV-089",
+      "MSG-048",
+      "T19"
+    ],
+    "expected_interactive_evidence": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T19",
+        "responder_id": "M_D",
+        "about_member_id": null,
+        "expected_content": "재학습 잡이 도는 중, 16일 결과 업로드 예정",
+        "question_intent": "STATUS_CHECK",
+        "expected_semantic_outcome": "REPORTS_ON_TRACK"
+      }
+    ],
+    "inaccessible_source_ids": [],
+    "candidate_expected": null,
+    "block_kind": null
+  }
+]

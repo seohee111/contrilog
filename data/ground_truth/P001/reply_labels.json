@@ -1,0 +1,93 @@
+[
+  {
+    "reply_id": "SIM-001",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": "403 + 관리자(보안팀) 승인 대기"
+  },
+  {
+    "reply_id": "SIM-002",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "EXTERNAL_DEPENDENCY",
+    "note": "승인 답이 여전히 없음. 우회(샘플 데이터)는 Task 해결이 아님"
+  },
+  {
+    "reply_id": "SIM-003",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_ON_TRACK",
+    "expected_block_kind": null,
+    "note": "로컬 작업 중, 업로드 예정, '막힌 건 없어요'"
+  },
+  {
+    "reply_id": "SIM-004",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_BLOCKED",
+    "expected_block_kind": "INTERNAL_ISSUE",
+    "note": "검색 결과 0건 원인을 못 찾음"
+  },
+  {
+    "reply_id": "SIM-005",
+    "project_id": "P001",
+    "expected_semantic": "ACCEPTS_SUPPORT",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-006",
+    "project_id": "P001",
+    "expected_semantic": "CONFIRMS_COMPLETION",
+    "expected_block_kind": null,
+    "note": "원인 찾아 고침"
+  },
+  {
+    "reply_id": "SIM-011",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_INCOMPLETE",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-012",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_INCOMPLETE",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-013",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_INCOMPLETE",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-014",
+    "project_id": "P001",
+    "expected_semantic": "CONFIRMS_COMPLETION",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-015",
+    "project_id": "P001",
+    "expected_semantic": "REPORTS_INCOMPLETE",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-016",
+    "project_id": "P001",
+    "expected_semantic": "CONFIRMS_COMPLETION",
+    "expected_block_kind": null,
+    "note": ""
+  },
+  {
+    "reply_id": "SIM-017",
+    "project_id": "P001",
+    "expected_semantic": "CONFIRMS_COUNTERPART",
+    "expected_block_kind": null,
+    "note": ""
+  }
+]

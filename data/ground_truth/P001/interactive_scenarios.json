@@ -1,0 +1,132 @@
+[
+  {
+    "scenario_id": "ISC-01",
+    "case_id": "CASE03",
+    "title": "막힌 연동 작업의 실행 Claim",
+    "probe_claim": {
+      "claim_id": "CLM-61",
+      "member_id": "M_C",
+      "submitted_at": "2026-09-17T10:00:00+09:00",
+      "text": "GitHub 연동 API를 구현했습니다."
+    },
+    "verify_at": "2026-09-18T10:00:00+09:00",
+    "expected_contribution_type": "EXECUTION",
+    "expected_initial_status": "PENDING_VERIFICATION",
+    "expected_final_status": "PENDING_VERIFICATION",
+    "expected_interactions": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T03",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "403·관리자 승인 대기로 아직 완료하지 못함",
+        "question_intent": "COMPLETION_CONFIRMATION",
+        "expected_semantic_outcome": "REPORTS_INCOMPLETE"
+      }
+    ]
+  },
+  {
+    "scenario_id": "ISC-02",
+    "case_id": "CASE04",
+    "title": "로컬 작업 중인 데이터셋 Claim",
+    "probe_claim": {
+      "claim_id": "CLM-62",
+      "member_id": "M_D",
+      "submitted_at": "2026-09-20T10:00:00+09:00",
+      "text": "평가용 샘플 데이터셋과 생성 스크립트를 만들었습니다."
+    },
+    "verify_at": "2026-09-21T12:00:00+09:00",
+    "expected_contribution_type": "EXECUTION",
+    "expected_initial_status": "PENDING_VERIFICATION",
+    "expected_final_status": "PENDING_VERIFICATION",
+    "expected_interactions": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T04",
+        "responder_id": "M_D",
+        "about_member_id": null,
+        "expected_content": "로컬에서 검수 중이며 업로드 전이라 아직 완료 전",
+        "question_intent": "COMPLETION_CONFIRMATION",
+        "expected_semantic_outcome": "REPORTS_INCOMPLETE"
+      }
+    ]
+  },
+  {
+    "scenario_id": "ISC-03",
+    "case_id": "CASE10",
+    "title": "Evidence 검색 오류로 막힌 시점의 실행 Claim",
+    "probe_claim": {
+      "claim_id": "CLM-63",
+      "member_id": "M_C",
+      "submitted_at": "2026-10-09T09:00:00+09:00",
+      "text": "Claim 검증 API와 Evidence 검색 모듈을 구현했습니다."
+    },
+    "verify_at": "2026-10-09T12:00:00+09:00",
+    "expected_contribution_type": "EXECUTION",
+    "expected_initial_status": "PENDING_VERIFICATION",
+    "expected_final_status": "PENDING_VERIFICATION",
+    "expected_interactions": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "검색 결과 0건 오류를 아직 해결하지 못함",
+        "question_intent": "COMPLETION_CONFIRMATION",
+        "expected_semantic_outcome": "REPORTS_INCOMPLETE"
+      }
+    ]
+  },
+  {
+    "scenario_id": "ISC-04",
+    "case_id": "CASE10",
+    "title": "오류 수정 직후(Task 보드 갱신 전)의 실행 Claim",
+    "probe_claim": {
+      "claim_id": "CLM-64",
+      "member_id": "M_C",
+      "submitted_at": "2026-10-09T22:50:00+09:00",
+      "text": "Claim 검증 API와 Evidence 검색 모듈을 구현했습니다."
+    },
+    "verify_at": "2026-10-09T23:00:00+09:00",
+    "expected_contribution_type": "EXECUTION",
+    "expected_initial_status": "PENDING_VERIFICATION",
+    "expected_final_status": "VERIFIED",
+    "expected_interactions": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "기간 필터 단위 문제를 고쳐 정상 동작, 완료 상태",
+        "question_intent": "COMPLETION_CONFIRMATION",
+        "expected_semantic_outcome": "CONFIRMS_COMPLETION"
+      }
+    ]
+  },
+  {
+    "scenario_id": "ISC-05",
+    "case_id": "CASE10",
+    "title": "DM에서 일어난 B의 지원 Claim",
+    "probe_claim": {
+      "claim_id": "CLM-65",
+      "member_id": "M_B",
+      "submitted_at": "2026-10-15T23:00:00+09:00",
+      "text": "지후님의 Evidence 검색 기간 필터 오류 해결을 도왔습니다."
+    },
+    "verify_at": "2026-10-16T00:00:00+09:00",
+    "expected_contribution_type": "SUPPORT",
+    "expected_initial_status": "PENDING_VERIFICATION",
+    "expected_final_status": "VERIFIED",
+    "expected_interactions": [
+      {
+        "kind": "CHECKIN_REPLY",
+        "task_id": "T11",
+        "responder_id": "M_C",
+        "about_member_id": null,
+        "expected_content": "지원받은 C가 B와 함께 원인을 찾아 수정했다고 확인",
+        "question_intent": "COUNTERPART_CONFIRMATION",
+        "expected_semantic_outcome": "CONFIRMS_COUNTERPART"
+      }
+    ]
+  }
+]

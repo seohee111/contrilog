@@ -1,0 +1,149 @@
+[
+  {
+    "meeting_id": "MT01",
+    "project_id": "P002",
+    "title": "킥오프: 목표·역할·일정",
+    "started_at": "2026-04-27T10:00:00+09:00",
+    "ended_at": "2026-04-27T11:20:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "서비스 목표",
+      "역할 분담",
+      "일정"
+    ]
+  },
+  {
+    "meeting_id": "MT02",
+    "project_id": "P002",
+    "title": "요구사항·설계 리뷰",
+    "started_at": "2026-05-06T10:30:00+09:00",
+    "ended_at": "2026-05-06T11:30:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "요구사항 리뷰",
+      "택배사 범위",
+      "Task 분배"
+    ]
+  },
+  {
+    "meeting_id": "MT03",
+    "project_id": "P002",
+    "title": "3주차 주간 회의",
+    "started_at": "2026-05-11T10:30:00+09:00",
+    "ended_at": "2026-05-11T11:15:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "진행 상황",
+      "파일럿 고객사"
+    ]
+  },
+  {
+    "meeting_id": "MT04",
+    "project_id": "P002",
+    "title": "4주차 주간 회의",
+    "started_at": "2026-05-18T10:30:00+09:00",
+    "ended_at": "2026-05-18T11:20:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "사내 베타 범위",
+      "신규 Task"
+    ]
+  },
+  {
+    "meeting_id": "MT05",
+    "project_id": "P002",
+    "title": "5주차 주간 회의 (대체공휴일로 화요일)",
+    "started_at": "2026-05-26T10:30:00+09:00",
+    "ended_at": "2026-05-26T11:20:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "사내 베타 점검",
+      "신규 Task"
+    ]
+  },
+  {
+    "meeting_id": "MT06",
+    "project_id": "P002",
+    "title": "6주차 주간 회의",
+    "started_at": "2026-06-01T10:30:00+09:00",
+    "ended_at": "2026-06-01T11:20:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D"
+    ],
+    "agenda": [
+      "베타 피드백",
+      "사유 중복 기준",
+      "신규 Task"
+    ]
+  },
+  {
+    "meeting_id": "MT07",
+    "project_id": "P002",
+    "title": "7주차 주간 회의 (파일럿 주)",
+    "started_at": "2026-06-08T10:30:00+09:00",
+    "ended_at": "2026-06-08T11:20:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "파일럿 준비",
+      "막힌 일",
+      "신규 Task"
+    ]
+  },
+  {
+    "meeting_id": "MT08",
+    "project_id": "P002",
+    "title": "8주차 주간 회의 (릴리스 주)",
+    "started_at": "2026-06-15T10:30:00+09:00",
+    "ended_at": "2026-06-15T11:10:00+09:00",
+    "attendee_ids": [
+      "M_A",
+      "M_B",
+      "M_C",
+      "M_D",
+      "M_E"
+    ],
+    "agenda": [
+      "릴리스 점검",
+      "회고"
+    ]
+  }
+]

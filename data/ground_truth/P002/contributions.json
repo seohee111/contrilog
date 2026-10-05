@@ -1,0 +1,159 @@
+[
+  {
+    "gt_contribution_id": "GTC-01",
+    "case_id": "CASE14",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "contribution_type": "SUPPORT",
+    "description": "웹훅 401의 원인(게이트웨이 본문 변환)을 찾아 웹훅 경로를 변환 대상에서 제외",
+    "expected_evidence_ids": [
+      "REV-047",
+      "REV-051",
+      "MSG-020",
+      "MSG-023"
+    ],
+    "related_task_ids": [
+      "T08"
+    ],
+    "related_claim_id": "CLM-01",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": [
+      "MSG-018",
+      "MSG-019"
+    ]
+  },
+  {
+    "gt_contribution_id": "GTC-02",
+    "case_id": "CASE15",
+    "project_id": "P002",
+    "member_id": "M_C",
+    "contribution_type": "EXECUTION",
+    "description": "배송 추적 지도 화면 구현",
+    "expected_evidence_ids": [
+      "REV-050",
+      "REV-054",
+      "REV-064",
+      "T11"
+    ],
+    "related_task_ids": [
+      "T11"
+    ],
+    "related_claim_id": "CLM-02",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-03",
+    "case_id": "CASE15",
+    "project_id": "P002",
+    "member_id": "M_A",
+    "contribution_type": "IDEA",
+    "description": "배송 상태별 마커 색상(4색) 제안",
+    "expected_evidence_ids": [
+      "MSG-021",
+      "MSG-022",
+      "REV-054"
+    ],
+    "related_task_ids": [
+      "T11"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-04",
+    "case_id": "CASE16",
+    "project_id": "P002",
+    "member_id": "M_D",
+    "contribution_type": "EXECUTION",
+    "description": "지연 예측 모델 v1·v2 학습과 결과 정리",
+    "expected_evidence_ids": [
+      "REV-025",
+      "REV-042",
+      "REV-089",
+      "T05",
+      "T19"
+    ],
+    "related_task_ids": [
+      "T05",
+      "T19"
+    ],
+    "related_claim_id": "CLM-03",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-05",
+    "case_id": "CASE17",
+    "project_id": "P002",
+    "member_id": "M_A",
+    "contribution_type": "COORDINATION",
+    "description": "온길 운영 키 지연에 맞춰 파일럿 택배사 범위와 연동 일정을 조정",
+    "expected_evidence_ids": [
+      "MSG-029",
+      "REV-059",
+      "T06"
+    ],
+    "related_task_ids": [
+      "T06"
+    ],
+    "related_claim_id": "CLM-04",
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-06",
+    "case_id": "CASE08",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "contribution_type": "SUPPORT",
+    "description": "iOS 푸시 권한 문제의 원인(App ID capability 누락)을 찾아 프로비저닝 프로필 재발급",
+    "expected_evidence_ids": [
+      "REV-083",
+      "MSG-042"
+    ],
+    "related_task_ids": [
+      "T14"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-07",
+    "case_id": "CASE10",
+    "project_id": "P002",
+    "member_id": "M_B",
+    "contribution_type": "SUPPORT",
+    "description": "V7 down 마이그레이션을 작성해 롤백 리허설 재개를 지원",
+    "expected_evidence_ids": [
+      "REV-078",
+      "MSG-039"
+    ],
+    "related_task_ids": [
+      "T16"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  },
+  {
+    "gt_contribution_id": "GTC-08",
+    "case_id": "CASE04",
+    "project_id": "P002",
+    "member_id": "M_E",
+    "contribution_type": "SUPPORT",
+    "description": "운영 CSP의 img-src에 지도 타일 도메인을 추가해 운영 지도 표시 문제 해결",
+    "expected_evidence_ids": [
+      "REV-062",
+      "MSG-033"
+    ],
+    "related_task_ids": [
+      "T11"
+    ],
+    "related_claim_id": null,
+    "expected_interactive_evidence": [],
+    "inaccessible_source_ids": []
+  }
+]

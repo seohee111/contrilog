@@ -1,0 +1,426 @@
+[
+  {
+    "utterance_id": "UT-MT01-01",
+    "meeting_id": "MT01",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-04-27T10:02:00+09:00",
+    "text": "오늘부터 ShipTrack 킥오프입니다. 택배사 배송 이벤트를 모아서 지연이 예상되는 주문을 고객에게 먼저 알려 주는 게 목표예요. 6월 12일 고객사 파일럿, 19일 정식 릴리스입니다."
+  },
+  {
+    "utterance_id": "UT-MT01-02",
+    "meeting_id": "MT01",
+    "sequence": 2,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-04-27T10:10:00+09:00",
+    "text": "백엔드는 제가 맡을게요. 이벤트 수집 API부터 만들고, 택배사 연동은 4개사 어댑터로 나누려고요."
+  },
+  {
+    "utterance_id": "UT-MT01-03",
+    "meeting_id": "MT01",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-04-27T10:18:00+09:00",
+    "text": "지연 예측 모델은 제가 할게요. 작년 배송 이벤트 로그로 피처부터 뽑아 보겠습니다."
+  },
+  {
+    "utterance_id": "UT-MT01-04",
+    "meeting_id": "MT01",
+    "sequence": 4,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-04-27T10:25:00+09:00",
+    "text": "앱이랑 웹 화면은 제가 맡을게요. 이번 주는 앱 기본 구조랑 로그인부터 잡겠습니다."
+  },
+  {
+    "utterance_id": "UT-MT01-05",
+    "meeting_id": "MT01",
+    "sequence": 5,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-04-27T10:31:00+09:00",
+    "text": "저는 CI/CD랑 스테이징 환경, 게이트웨이 설정 맡을게요. 다음 주 중에 스테이징 열어 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT01-06",
+    "meeting_id": "MT01",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-04-27T10:40:00+09:00",
+    "text": "요구사항 정의서는 제가 이번 주에 초안 쓰고 다음 회의에서 같이 리뷰해요. 5월 1일이랑 4일은 회사 휴무라 다음 회의는 6일 수요일입니다."
+  },
+  {
+    "utterance_id": "UT-MT01-07",
+    "meeting_id": "MT01",
+    "sequence": 7,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-04-27T10:52:00+09:00",
+    "text": "지연 기준은 약속 도착일보다 하루 이상 늦는 걸로 잡으면 될까요?"
+  },
+  {
+    "utterance_id": "UT-MT01-08",
+    "meeting_id": "MT01",
+    "sequence": 8,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-04-27T10:55:00+09:00",
+    "text": "네, 일단 그 기준으로 가고 정의서에 적어 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT02-01",
+    "meeting_id": "MT02",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-06T10:31:00+09:00",
+    "text": "정의서 초안 기준으로 리뷰할게요. 이번 주 금요일에 설계 확정하는 게 목표예요."
+  },
+  {
+    "utterance_id": "UT-MT02-02",
+    "meeting_id": "MT02",
+    "sequence": 2,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-05-06T10:38:00+09:00",
+    "text": "택배사 연동은 누리택배, 바로배송, 한결로지스, 온길익스프레스 4개사예요. 다음 주부터 어댑터 들어갈게요."
+  },
+  {
+    "utterance_id": "UT-MT02-03",
+    "meeting_id": "MT02",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-05-06T10:45:00+09:00",
+    "text": "지연 사유 코드가 정의서에 있으면 좋겠어요. 나중에 사유별로 알림 문구를 다르게 쓰려면 필요해요."
+  },
+  {
+    "utterance_id": "UT-MT02-04",
+    "meeting_id": "MT02",
+    "sequence": 4,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-06T10:48:00+09:00",
+    "text": "네, 사유 코드는 제가 금요일까지 정의서에 추가할게요."
+  },
+  {
+    "utterance_id": "UT-MT02-05",
+    "meeting_id": "MT02",
+    "sequence": 5,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-05-06T10:55:00+09:00",
+    "text": "알림 설정 화면은 채널(앱 푸시·알림톡)이랑 빈도를 고르는 정도면 될까요?"
+  },
+  {
+    "utterance_id": "UT-MT02-06",
+    "meeting_id": "MT02",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-06T10:58:00+09:00",
+    "text": "네, 그 두 가지면 충분해요. 정의서에도 그렇게 적을게요."
+  },
+  {
+    "utterance_id": "UT-MT02-07",
+    "meeting_id": "MT02",
+    "sequence": 7,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-05-06T11:02:00+09:00",
+    "text": "스테이징은 오늘 아침에 열었어요. 게이트웨이 거쳐서 들어오게 해 놨습니다."
+  },
+  {
+    "utterance_id": "UT-MT02-08",
+    "meeting_id": "MT02",
+    "sequence": 8,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-06T11:10:00+09:00",
+    "text": "Task는 회의 끝나고 보드에 만들어 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT03-01",
+    "meeting_id": "MT03",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-11T10:31:00+09:00",
+    "text": "이번 주부터 본격 구현이에요. 진행 상황 공유 부탁드려요."
+  },
+  {
+    "utterance_id": "UT-MT03-02",
+    "meeting_id": "MT03",
+    "sequence": 2,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-05-11T10:35:00+09:00",
+    "text": "이벤트 수집 API는 이번 주 금요일 마감 맞출 수 있어요. 오늘부터 택배사 어댑터도 같이 시작합니다."
+  },
+  {
+    "utterance_id": "UT-MT03-03",
+    "meeting_id": "MT03",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-05-11T10:41:00+09:00",
+    "text": "모델은 baseline 학습 노트북 오늘 올릴게요."
+  },
+  {
+    "utterance_id": "UT-MT03-04",
+    "meeting_id": "MT03",
+    "sequence": 4,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-05-11T10:46:00+09:00",
+    "text": "앱 기본 구조는 리뷰 끝났고, 이번 주부터 알림 설정 화면 들어가요."
+  },
+  {
+    "utterance_id": "UT-MT03-05",
+    "meeting_id": "MT03",
+    "sequence": 5,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-05-11T10:52:00+09:00",
+    "text": "CI/CD는 거의 끝났고 이번 주에 앱 서명 설정이랑 게이트웨이 정리할게요."
+  },
+  {
+    "utterance_id": "UT-MT03-06",
+    "meeting_id": "MT03",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-11T11:00:00+09:00",
+    "text": "파일럿 고객사는 세 곳으로 확정됐어요. 온보딩 가이드는 다음 주부터 제가 쓸게요."
+  },
+  {
+    "utterance_id": "UT-MT04-01",
+    "meeting_id": "MT04",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-18T10:31:00+09:00",
+    "text": "사내 베타가 29일이에요. 이번 주에 웹훅 수신, 부하 테스트, 지도 화면, 온보딩 가이드 Task 새로 만들게요."
+  },
+  {
+    "utterance_id": "UT-MT04-02",
+    "meeting_id": "MT04",
+    "sequence": 2,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-05-18T10:37:00+09:00",
+    "text": "택배사 어댑터는 누리·바로 끝났고 이번 주에 한결이랑 온길 들어갑니다. 웹훅도 제가 할게요."
+  },
+  {
+    "utterance_id": "UT-MT04-03",
+    "meeting_id": "MT04",
+    "sequence": 3,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-05-18T10:44:00+09:00",
+    "text": "알림 설정 화면은 이번 주에 디자인 리뷰 받고 코드로 옮길게요. 지도 화면은 그다음에 시작할게요."
+  },
+  {
+    "utterance_id": "UT-MT04-04",
+    "meeting_id": "MT04",
+    "sequence": 4,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-05-18T10:50:00+09:00",
+    "text": "부하 테스트는 제가 k6로 할게요. 이벤트 수집 API 기준 500rps 목표로 잡겠습니다."
+  },
+  {
+    "utterance_id": "UT-MT04-05",
+    "meeting_id": "MT04",
+    "sequence": 5,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-05-18T10:57:00+09:00",
+    "text": "모델은 이번 주 안에 v1 확정할게요."
+  },
+  {
+    "utterance_id": "UT-MT04-06",
+    "meeting_id": "MT04",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-18T11:03:00+09:00",
+    "text": "지도 화면 요구사항은 내일 정의서에 추가해 둘게요."
+  },
+  {
+    "utterance_id": "UT-MT05-01",
+    "meeting_id": "MT05",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-26T10:31:00+09:00",
+    "text": "어제 대체공휴일이라 오늘 회의해요. 금요일 사내 베타 전에 남은 거 점검할게요."
+  },
+  {
+    "utterance_id": "UT-MT05-02",
+    "meeting_id": "MT05",
+    "sequence": 2,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-05-26T10:36:00+09:00",
+    "text": "웹훅은 스테이징에서만 서명 검증이 401로 떨어지는 문제가 있어서 오늘 다인님이랑 같이 보기로 했어요. 온길은 운영 키 회신을 아직 못 받았어요."
+  },
+  {
+    "utterance_id": "UT-MT05-03",
+    "meeting_id": "MT05",
+    "sequence": 3,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-05-26T10:43:00+09:00",
+    "text": "부하 테스트는 로컬에서 돌린 결과를 목요일에 리포트로 올릴게요."
+  },
+  {
+    "utterance_id": "UT-MT05-04",
+    "meeting_id": "MT05",
+    "sequence": 4,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-05-26T10:48:00+09:00",
+    "text": "알림 설정 화면은 오늘 리뷰 올리고, 이번 주부터 지도 화면 들어가요."
+  },
+  {
+    "utterance_id": "UT-MT05-05",
+    "meeting_id": "MT05",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-26T10:54:00+09:00",
+    "text": "온보딩 가이드는 노션에서 고객사 담당자들이랑 같이 보고 있고 이번 주에 공유 문서로 옮길게요."
+  },
+  {
+    "utterance_id": "UT-MT05-06",
+    "meeting_id": "MT05",
+    "sequence": 6,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-05-26T11:00:00+09:00",
+    "text": "모델 v1은 끝났고, 지연 사유 분류 규칙 시작할게요."
+  },
+  {
+    "utterance_id": "UT-MT05-07",
+    "meeting_id": "MT05",
+    "sequence": 7,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-05-26T11:06:00+09:00",
+    "text": "모니터링 대시보드랑 사유 분류 Task 오늘 만들게요."
+  },
+  {
+    "utterance_id": "UT-MT06-01",
+    "meeting_id": "MT06",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-01T10:31:00+09:00",
+    "text": "베타 피드백 정리하고 파일럿 준비 들어갈게요. 다인님은 오늘 사외 교육이라 빠졌어요."
+  },
+  {
+    "utterance_id": "UT-MT06-02",
+    "meeting_id": "MT06",
+    "sequence": 2,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-01T10:36:00+09:00",
+    "text": "재민님이 올린 사유 중복 건은 택배사가 알려 준 사유를 우선하고, 없으면 기상을 우선하는 걸로 정할게요. 정의서에도 반영할게요."
+  },
+  {
+    "utterance_id": "UT-MT06-03",
+    "meeting_id": "MT06",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-06-01T10:40:00+09:00",
+    "text": "네, 그 기준으로 오늘 분류 로직 고칠게요."
+  },
+  {
+    "utterance_id": "UT-MT06-04",
+    "meeting_id": "MT06",
+    "sequence": 4,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-06-01T10:45:00+09:00",
+    "text": "지도 화면이 운영에서만 회색으로 나와서 막혀 있어요. 오늘 다시 볼게요."
+  },
+  {
+    "utterance_id": "UT-MT06-05",
+    "meeting_id": "MT06",
+    "sequence": 5,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-06-01T10:51:00+09:00",
+    "text": "택배사 연동은 온길 키만 남았고, 이번 주부터 정산 리포트 배치 시작할게요."
+  },
+  {
+    "utterance_id": "UT-MT06-06",
+    "meeting_id": "MT06",
+    "sequence": 6,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-06-01T10:57:00+09:00",
+    "text": "이번 주에 앱 푸시 권한 처리도 시작할게요."
+  },
+  {
+    "utterance_id": "UT-MT06-07",
+    "meeting_id": "MT06",
+    "sequence": 7,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-01T11:03:00+09:00",
+    "text": "푸시 권한, 정산 배치, 런북, 고객 피드백 정리 Task 만들게요."
+  },
+  {
+    "utterance_id": "UT-MT07-01",
+    "meeting_id": "MT07",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-08T10:31:00+09:00",
+    "text": "금요일 파일럿 오픈 주예요. 막힌 거 있으면 오늘 말해 주세요."
+  },
+  {
+    "utterance_id": "UT-MT07-02",
+    "meeting_id": "MT07",
+    "sequence": 2,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-06-08T10:36:00+09:00",
+    "text": "롤백 리허설에서 V7 down 마이그레이션이 계속 실패해서 거기서 멈춰 있어요."
+  },
+  {
+    "utterance_id": "UT-MT07-03",
+    "meeting_id": "MT07",
+    "sequence": 3,
+    "speaker_id": "M_B",
+    "spoken_at": "2026-06-08T10:41:00+09:00",
+    "text": "V7은 제가 만든 거라 같이 볼게요. 정산 배치는 데이터플랫폼팀 스키마 확정을 기다리는 중이에요."
+  },
+  {
+    "utterance_id": "UT-MT07-04",
+    "meeting_id": "MT07",
+    "sequence": 4,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-06-08T10:47:00+09:00",
+    "text": "푸시 권한 쪽 보고 있어요."
+  },
+  {
+    "utterance_id": "UT-MT07-05",
+    "meeting_id": "MT07",
+    "sequence": 5,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-06-08T10:52:00+09:00",
+    "text": "모델 v2 재학습은 6월 데이터 넣어서 이번 주에 돌릴게요."
+  },
+  {
+    "utterance_id": "UT-MT07-06",
+    "meeting_id": "MT07",
+    "sequence": 6,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-08T10:58:00+09:00",
+    "text": "고객사 피드백은 이번 주에 통화로 마무리할게요. 통합 테스트 Task는 다인님이랑 수빈님이 같이 맡아 주세요."
+  },
+  {
+    "utterance_id": "UT-MT08-01",
+    "meeting_id": "MT08",
+    "sequence": 1,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-15T10:31:00+09:00",
+    "text": "이번 주 금요일 정식 릴리스예요. 남은 건 통합 테스트랑 모델 v2예요."
+  },
+  {
+    "utterance_id": "UT-MT08-02",
+    "meeting_id": "MT08",
+    "sequence": 2,
+    "speaker_id": "M_C",
+    "spoken_at": "2026-06-15T10:36:00+09:00",
+    "text": "디바이스팜 갱신 결재가 아직이라 iOS E2E는 대기 중이에요."
+  },
+  {
+    "utterance_id": "UT-MT08-03",
+    "meeting_id": "MT08",
+    "sequence": 3,
+    "speaker_id": "M_D",
+    "spoken_at": "2026-06-15T10:41:00+09:00",
+    "text": "v2 재학습은 내일 끝나요. 결과 보고 바로 올릴게요."
+  },
+  {
+    "utterance_id": "UT-MT08-04",
+    "meeting_id": "MT08",
+    "sequence": 4,
+    "speaker_id": "M_E",
+    "spoken_at": "2026-06-15T10:45:00+09:00",
+    "text": "안드로이드 E2E는 다 통과했어요."
+  },
+  {
+    "utterance_id": "UT-MT08-05",
+    "meeting_id": "MT08",
+    "sequence": 5,
+    "speaker_id": "M_A",
+    "spoken_at": "2026-06-15T10:50:00+09:00",
+    "text": "회고 문서 틀은 제가 만들어 둘게요. 기여 내역은 금요일까지 회고 폼에 적어 주세요."
+  }
+]

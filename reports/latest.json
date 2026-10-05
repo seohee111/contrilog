@@ -1,0 +1,3553 @@
+{
+  "generated_at": "2026-10-05 17:20",
+  "caveat": "Agent와 같은 팀이 만든 synthetic 데이터(P001·P002)의 개수다. 비교·회귀 확인용이며 일반 성능 추정치가 아니다.",
+  "reply_benchmark": {
+    "rule": {
+      "interpreter": "rule",
+      "by_kind": {
+        "STATUS_CHECK": {
+          "correct": 20,
+          "total": 29
+        },
+        "SUPPORT_REQUEST": {
+          "correct": 11,
+          "total": 17
+        }
+      },
+      "overall": {
+        "correct": 31,
+        "total": 46
+      },
+      "hard_cases": {
+        "correct": 9,
+        "total": 18
+      },
+      "block_kind": {
+        "correct": 9,
+        "total": 10
+      },
+      "confusion": {
+        "ACCEPTS_SUPPORT": {
+          "ACCEPTS_SUPPORT": 5
+        },
+        "CONFIRMS_COMPLETION": {
+          "CONFIRMS_COMPLETION": 1
+        },
+        "DECLINES_SUPPORT": {
+          "NOT_INFORMATIVE": 5,
+          "DECLINES_SUPPORT": 6,
+          "ACCEPTS_SUPPORT": 1
+        },
+        "REPORTS_BLOCKED": {
+          "REPORTS_BLOCKED": 10,
+          "NOT_INFORMATIVE": 2,
+          "REPORTS_ON_TRACK": 1
+        },
+        "REPORTS_ON_TRACK": {
+          "REPORTS_ON_TRACK": 9,
+          "NOT_INFORMATIVE": 4,
+          "CONFIRMS_COMPLETION": 1,
+          "REPORTS_BLOCKED": 1
+        }
+      },
+      "not_covered": 7,
+      "errors": [
+        {
+          "reply_id": "SIM-001",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "정의서 초안은 거의 다 썼어요. 수요일 리뷰 전에 올려 둘게요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-004",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "CI는 다 됐고 앱 빌드 워크플로만 남았어요. 금요일 전에는 끝낼게요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "CONFIRMS_COMPLETION",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-005",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "피처 정리하는 중이고, 다음 주부터 모델 학습 들어가요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-010",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "피그마로 화면 시안 잡고 있어요. 목요일 디자인 리뷰 끝나면 바로 코드로 옮길 거라 일정은 괜찮아요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "진행·예정을 나타내는 정형 어휘 없이 정상 진행을 말함"
+        },
+        {
+          "reply_id": "SIM-012",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "가이드 본문은 노션에서 고객사 담당자들이랑 같이 보면서 쓰고 있어요. 거의 다 써서 수요일에 공유 문서로 옮겨 둘게요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "작업 장소가 기록 밖(노션)이라는 설명"
+        },
+        {
+          "reply_id": "SIM-015",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "온길 운영 키는 여전히 회신이 없어요. 나머지 3개사는 파일럿에서 잘 돌고 있어서, 온길은 정식 릴리스 이후로 미뤘어요.",
+          "expected": "REPORTS_BLOCKED",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "predicted_block_kind": null,
+          "note": "남은 범위가 외부 회신 대기로 멈춘 상태. 다른 범위가 잘 돈다는 말이 섞여 있음"
+        },
+        {
+          "reply_id": "SIM-019",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "막혔다기보다는요, 데이터플랫폼팀이 원천 테이블 스키마를 바꾼다고 해서 그게 확정될 때까지 손을 못 대고 있어요. 확정만 되면 하루면 끝나요.",
+          "expected": "REPORTS_BLOCKED",
+          "predicted": "REPORTS_BLOCKED",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "predicted_block_kind": "INTERNAL_ISSUE",
+          "note": "'막혔다기보다는' 완곡 부정 + 다른 팀 결정 대기 (외부 의존)"
+        },
+        {
+          "reply_id": "SIM-020",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "문제 없을 줄 알았는데 스테이징에서 롤백 리허설을 돌려 보니 DB 마이그레이션 V7 되돌리기가 계속 실패해요. 파티션 테이블로 바꾼 버전이라 down 스크립트를 어떻게 짜야 할지 몰라서 거기서 멈춰 있어요.",
+          "expected": "REPORTS_BLOCKED",
+          "predicted": "REPORTS_ON_TRACK",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "predicted_block_kind": null,
+          "note": "'문제 없을 줄 알았는데'는 막힘을 부정하는 말이 아님"
+        },
+        {
+          "reply_id": "SIM-021",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "고객사 세 곳 통화는 다 끝났고 남은 미해결 이슈는 0건이에요. 오늘 오후에 최종 정리본 올릴게요.",
+          "expected": "REPORTS_ON_TRACK",
+          "predicted": "REPORTS_BLOCKED",
+          "expected_block_kind": null,
+          "predicted_block_kind": "INTERNAL_ISSUE",
+          "note": "'0건'은 남은 문제가 없다는 뜻"
+        },
+        {
+          "reply_id": "SIM-022",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "제 쪽 안드로이드 시나리오는 다 돌렸어요. iOS 쪽은 수빈님 디바이스팜 계정 갱신 결재가 안 나서 대기 중이고, 그게 풀려야 통합 결과를 낼 수 있어요.",
+          "expected": "REPORTS_BLOCKED",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "predicted_block_kind": null,
+          "note": "응답자 본인 몫은 끝났지만 Task는 공동 담당자의 외부 결재 대기로 멈춤"
+        },
+        {
+          "reply_id": "SIM-026",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "웹훅 쪽은 제가 다뤄 본 적이 없어서 도움이 될지 모르겠어요. 게이트웨이 설정은 다인님이 하셨으니 다인님께 여쭤보는 게 빠를 것 같아요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "거절 어휘 없이 다른 사람을 추천"
+        },
+        {
+          "reply_id": "SIM-028",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "서명 검증은 제가 봐도 잘 모를 것 같아요. 개발 쪽에서 보시는 게 좋겠어요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-030",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "저는 화면 기획만 해서 원인까지는 잘 모르겠어요. 운영에서만 그렇다면 인프라 쪽 변경을 먼저 확인해 보시는 게 좋을 것 같아요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "관련 기획 문서 작성자지만 원인 해결은 못 한다고 답함"
+        },
+        {
+          "reply_id": "SIM-032",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "프론트 지도 라이브러리는 잘 몰라서요, 도와드리기 어려울 것 같아요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-035",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "앱 쪽은 제가 잘 몰라요. 다른 분께 부탁드리는 게 좋겠어요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        },
+        {
+          "reply_id": "SIM-040",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "제가 직접 도와드리긴 어렵고, 현우님께 같이 봐 달라고 말씀드려 볼게요.",
+          "expected": "DECLINES_SUPPORT",
+          "predicted": "ACCEPTS_SUPPORT",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "'볼게요'가 있지만 본인이 지원하겠다는 뜻이 아님"
+        }
+      ]
+    },
+    "llm": {
+      "interpreter": "llm",
+      "by_kind": {
+        "STATUS_CHECK": {
+          "correct": 28,
+          "total": 29
+        },
+        "SUPPORT_REQUEST": {
+          "correct": 16,
+          "total": 17
+        }
+      },
+      "overall": {
+        "correct": 44,
+        "total": 46
+      },
+      "hard_cases": {
+        "correct": 17,
+        "total": 18
+      },
+      "block_kind": {
+        "correct": 12,
+        "total": 13
+      },
+      "confusion": {
+        "ACCEPTS_SUPPORT": {
+          "ACCEPTS_SUPPORT": 4,
+          "NOT_INFORMATIVE": 1
+        },
+        "CONFIRMS_COMPLETION": {
+          "REPORTS_ON_TRACK": 1
+        },
+        "DECLINES_SUPPORT": {
+          "DECLINES_SUPPORT": 12
+        },
+        "REPORTS_BLOCKED": {
+          "REPORTS_BLOCKED": 13
+        },
+        "REPORTS_ON_TRACK": {
+          "REPORTS_ON_TRACK": 15
+        }
+      },
+      "not_covered": 7,
+      "errors": [
+        {
+          "reply_id": "SIM-006",
+          "project_id": "P001",
+          "kind": "STATUS_CHECK",
+          "text": "도윤님이랑 같이 원인 찾아서 고쳤어요. 기간 필터 단위가 안 맞았던 거였고, 지금은 검색 정상으로 됩니다.",
+          "expected": "CONFIRMS_COMPLETION",
+          "predicted": "REPORTS_ON_TRACK",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": "원인 찾아 고침"
+        },
+        {
+          "reply_id": "SIM-017",
+          "project_id": "P002",
+          "kind": "STATUS_CHECK",
+          "text": "규칙 초안은 만들었는데 사유 코드 두 개가 겹치는 건을 어떻게 분류할지 정해지지 않아서 막혀 있어요. 기획 쪽 기준이 있어야 진행할 수 있을 것 같아요.",
+          "expected": "REPORTS_BLOCKED",
+          "predicted": "REPORTS_BLOCKED",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "predicted_block_kind": "EXTERNAL_DEPENDENCY",
+          "note": "팀 내 의사결정(기획 기준) 대기"
+        },
+        {
+          "reply_id": "SIM-029",
+          "project_id": "P002",
+          "kind": "SUPPORT_REQUEST",
+          "text": "앗, 제가 목요일에 운영 ingress에 CSP 헤더를 넣었는데 지도 타일 도메인을 img-src에 안 넣었을 수 있어요. 바로 확인해 볼게요.",
+          "expected": "ACCEPTS_SUPPORT",
+          "predicted": "NOT_INFORMATIVE",
+          "expected_block_kind": null,
+          "predicted_block_kind": null,
+          "note": ""
+        }
+      ]
+    },
+    "oracle": {
+      "interpreter": "oracle",
+      "by_kind": {
+        "STATUS_CHECK": {
+          "correct": 29,
+          "total": 29
+        },
+        "SUPPORT_REQUEST": {
+          "correct": 17,
+          "total": 17
+        }
+      },
+      "overall": {
+        "correct": 46,
+        "total": 46
+      },
+      "hard_cases": {
+        "correct": 18,
+        "total": 18
+      },
+      "block_kind": {
+        "correct": 13,
+        "total": 13
+      },
+      "confusion": {
+        "ACCEPTS_SUPPORT": {
+          "ACCEPTS_SUPPORT": 5
+        },
+        "CONFIRMS_COMPLETION": {
+          "CONFIRMS_COMPLETION": 1
+        },
+        "DECLINES_SUPPORT": {
+          "DECLINES_SUPPORT": 12
+        },
+        "REPORTS_BLOCKED": {
+          "REPORTS_BLOCKED": 13
+        },
+        "REPORTS_ON_TRACK": {
+          "REPORTS_ON_TRACK": 15
+        }
+      },
+      "not_covered": 7,
+      "errors": []
+    }
+  },
+  "stagnation": [
+    {
+      "project": "P001",
+      "interpreter": "rule",
+      "memory": false,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 10,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 13,
+      "candidates": 13,
+      "questions_outside_work_hours": 13,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 10
+    },
+    {
+      "project": "P001",
+      "interpreter": "rule",
+      "memory": true,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 11,
+      "candidates": 11,
+      "questions_outside_work_hours": 11,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 8
+    },
+    {
+      "project": "P001",
+      "interpreter": "llm",
+      "memory": false,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 10,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 13,
+      "candidates": 13,
+      "questions_outside_work_hours": 13,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 10
+    },
+    {
+      "project": "P001",
+      "interpreter": "llm",
+      "memory": true,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 11,
+      "candidates": 11,
+      "questions_outside_work_hours": 11,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 8
+    },
+    {
+      "project": "P001",
+      "interpreter": "oracle",
+      "memory": false,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 10,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 13,
+      "candidates": 13,
+      "questions_outside_work_hours": 13,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 10
+    },
+    {
+      "project": "P001",
+      "interpreter": "oracle",
+      "memory": true,
+      "summary": {
+        "items": 3,
+        "candidate_detection": {
+          "correct": 3,
+          "total": 3
+        },
+        "check_in": {
+          "correct": 3,
+          "total": 3
+        },
+        "reply_interpretation": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_classification": {
+          "correct": 3,
+          "total": 3
+        },
+        "block_kind": {
+          "correct": 0,
+          "total": 0
+        },
+        "final_state": {
+          "correct": 3,
+          "total": 3
+        },
+        "intervention": {
+          "correct": 2,
+          "total": 2
+        },
+        "support_candidate": {
+          "correct": 1,
+          "total": 1
+        },
+        "human_in_the_loop": {
+          "correct": 1,
+          "total": 1
+        },
+        "resolution": {
+          "correct": 1,
+          "total": 1
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE03",
+          "task_id": "T03",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "CONFIRMED_BLOCK",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 92.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE04",
+          "task_id": "T04",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE10",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 29.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 11,
+      "candidates": 11,
+      "questions_outside_work_hours": 11,
+      "false_negatives": [],
+      "true_positive": 2,
+      "false_positive": 1,
+      "unresolved": 8
+    },
+    {
+      "project": "P002",
+      "interpreter": "rule",
+      "memory": false,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 8,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 10,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 4,
+          "total": 5
+        },
+        "final_state": {
+          "correct": 10,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 11,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 2,
+          "total": 3
+        },
+        "human_in_the_loop": {
+          "correct": 5,
+          "total": 5
+        },
+        "resolution": {
+          "correct": 4,
+          "total": 9
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL",
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "NOT_INFORMATIVE",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "NOT_INFORMATIVE",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 77.3,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 36.4,
+          "runs_after_block_episode": [
+            "STR-016"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 60.8,
+          "runs_after_block_episode": [
+            "STR-018"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 70.4,
+          "runs_after_block_episode": [
+            "STR-017"
+          ],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": "M_D",
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 66.8,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 26,
+      "candidates": 26,
+      "questions_outside_work_hours": 22,
+      "false_negatives": [
+        "CASE08",
+        "CASE10",
+        "CASE12"
+      ],
+      "true_positive": 6,
+      "false_positive": 8,
+      "unresolved": 11
+    },
+    {
+      "project": "P002",
+      "interpreter": "rule",
+      "memory": true,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 8,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 10,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 4,
+          "total": 5
+        },
+        "final_state": {
+          "correct": 10,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 11,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 2,
+          "total": 3
+        },
+        "human_in_the_loop": {
+          "correct": 5,
+          "total": 5
+        },
+        "resolution": {
+          "correct": 4,
+          "total": 9
+        },
+        "unlabeled_candidates": 7,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL",
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "NOT_INFORMATIVE",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "NOT_INFORMATIVE",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 90.1,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 48.4,
+          "runs_after_block_episode": [
+            "STR-015"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 84.8,
+          "runs_after_block_episode": [
+            "STR-017"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 82.4,
+          "runs_after_block_episode": [
+            "STR-016"
+          ],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": "M_D",
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 66.8,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": null,
+          "supporter_selected": "M_B",
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 25,
+      "candidates": 25,
+      "questions_outside_work_hours": 21,
+      "false_negatives": [
+        "CASE08",
+        "CASE10",
+        "CASE12"
+      ],
+      "true_positive": 6,
+      "false_positive": 8,
+      "unresolved": 10
+    },
+    {
+      "project": "P002",
+      "interpreter": "llm",
+      "memory": false,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 12,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 12,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 5,
+          "total": 6
+        },
+        "final_state": {
+          "correct": 12,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 13,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 2,
+          "total": 3
+        },
+        "human_in_the_loop": {
+          "correct": 3,
+          "total": 3
+        },
+        "resolution": {
+          "correct": 5,
+          "total": 8
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 77.3,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 36.4,
+          "runs_after_block_episode": [
+            "STR-015"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 60.8,
+          "runs_after_block_episode": [
+            "STR-017"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 70.4,
+          "runs_after_block_episode": [
+            "STR-016"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 66.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 75.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 25,
+      "candidates": 25,
+      "questions_outside_work_hours": 21,
+      "false_negatives": [
+        "CASE08",
+        "CASE12"
+      ],
+      "true_positive": 8,
+      "false_positive": 11,
+      "unresolved": 6
+    },
+    {
+      "project": "P002",
+      "interpreter": "llm",
+      "memory": true,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 11,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 11,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 5,
+          "total": 5
+        },
+        "final_state": {
+          "correct": 11,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 13,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 2,
+          "total": 3
+        },
+        "human_in_the_loop": {
+          "correct": 3,
+          "total": 3
+        },
+        "resolution": {
+          "correct": 4,
+          "total": 8
+        },
+        "unlabeled_candidates": 6,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 90.1,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 60.4,
+          "runs_after_block_episode": [
+            "STR-013"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 84.8,
+          "runs_after_block_episode": [
+            "STR-015"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 78.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 75.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 22,
+      "candidates": 22,
+      "questions_outside_work_hours": 19,
+      "false_negatives": [
+        "CASE06",
+        "CASE08",
+        "CASE12"
+      ],
+      "true_positive": 7,
+      "false_positive": 11,
+      "unresolved": 4
+    },
+    {
+      "project": "P002",
+      "interpreter": "oracle",
+      "memory": false,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 12,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 12,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 6,
+          "total": 6
+        },
+        "final_state": {
+          "correct": 12,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 14,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 3,
+          "total": 4
+        },
+        "human_in_the_loop": {
+          "correct": 4,
+          "total": 4
+        },
+        "resolution": {
+          "correct": 5,
+          "total": 8
+        },
+        "unlabeled_candidates": 8,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 77.3,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 36.4,
+          "runs_after_block_episode": [
+            "STR-015"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 60.8,
+          "runs_after_block_episode": [
+            "STR-017"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 70.4,
+          "runs_after_block_episode": [
+            "STR-016"
+          ],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 66.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 75.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 25,
+      "candidates": 25,
+      "questions_outside_work_hours": 21,
+      "false_negatives": [
+        "CASE08",
+        "CASE12"
+      ],
+      "true_positive": 8,
+      "false_positive": 11,
+      "unresolved": 6
+    },
+    {
+      "project": "P002",
+      "interpreter": "oracle",
+      "memory": true,
+      "summary": {
+        "items": 15,
+        "candidate_detection": {
+          "correct": 12,
+          "total": 13
+        },
+        "check_in": {
+          "correct": 14,
+          "total": 15
+        },
+        "reply_interpretation": {
+          "correct": 11,
+          "total": 14
+        },
+        "block_classification": {
+          "correct": 11,
+          "total": 15
+        },
+        "block_kind": {
+          "correct": 5,
+          "total": 5
+        },
+        "final_state": {
+          "correct": 11,
+          "total": 15
+        },
+        "intervention": {
+          "correct": 13,
+          "total": 15
+        },
+        "support_candidate": {
+          "correct": 2,
+          "total": 3
+        },
+        "human_in_the_loop": {
+          "correct": 3,
+          "total": 3
+        },
+        "resolution": {
+          "correct": 4,
+          "total": 8
+        },
+        "unlabeled_candidates": 6,
+        "caveat": "Agent와 같은 팀이 만든 synthetic 데이터의 Ground Truth 정체 항목에 대한 개수다. 탐지율·정확도 추정치로 해석하지 않는다."
+      },
+      "items": [
+        {
+          "gt_stagnation_id": "GTS-01",
+          "case_id": "CASE01",
+          "task_id": "T05",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-02",
+          "case_id": "CASE02",
+          "task_id": "T07",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-03",
+          "case_id": "CASE02",
+          "task_id": "T09",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-04",
+          "case_id": "CASE02",
+          "task_id": "T10",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-05",
+          "case_id": "CASE03",
+          "task_id": "T08",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_E",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 90.1,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-06",
+          "case_id": "CASE04",
+          "task_id": "T11",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_A",
+          "supporter_correct": false,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 60.4,
+          "runs_after_block_episode": [
+            "STR-013"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-07",
+          "case_id": "CASE05",
+          "task_id": "T06",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": false,
+          "forbidden_state_violations": [
+            "RESOLVED"
+          ],
+          "detection_delay_confirmed_hours": 84.8,
+          "runs_after_block_episode": [
+            "STR-015"
+          ],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-08",
+          "case_id": "CASE06",
+          "task_id": "T12",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-09",
+          "case_id": "CASE07",
+          "task_id": "T13",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": null,
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-10",
+          "case_id": "CASE08",
+          "task_id": "T14",
+          "member_id": "M_C",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-11",
+          "case_id": "CASE09",
+          "task_id": "T15",
+          "member_id": "M_B",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "EXTERNAL_DEPENDENCY",
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 78.8,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-12",
+          "case_id": "CASE10",
+          "task_id": "T16",
+          "member_id": "M_E",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "CONFIRMED_BLOCK",
+            "RESOLVED"
+          ],
+          "reply_semantic": "REPORTS_BLOCKED",
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": "INTERNAL_ISSUE",
+          "expected_block_kind": "INTERNAL_ISSUE",
+          "supporter_selected": "M_B",
+          "supporter_correct": true,
+          "final_state": "RESOLVED",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": 75.6,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-13",
+          "case_id": "CASE11",
+          "task_id": "T17",
+          "member_id": "M_A",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        },
+        {
+          "gt_stagnation_id": "GTS-14",
+          "case_id": "CASE12",
+          "task_id": "T18",
+          "member_id": "M_C",
+          "state_sequence": [],
+          "reply_semantic": null,
+          "expected_reply_semantic": "REPORTS_BLOCKED",
+          "block_kind": null,
+          "expected_block_kind": "EXTERNAL_DEPENDENCY",
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": false,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": false
+        },
+        {
+          "gt_stagnation_id": "GTS-15",
+          "case_id": "CASE13",
+          "task_id": "T19",
+          "member_id": "M_D",
+          "state_sequence": [
+            "STAGNATION_CANDIDATE",
+            "NORMAL"
+          ],
+          "reply_semantic": "REPORTS_ON_TRACK",
+          "expected_reply_semantic": "REPORTS_ON_TRACK",
+          "block_kind": null,
+          "expected_block_kind": null,
+          "supporter_selected": null,
+          "supporter_correct": null,
+          "final_state": "NORMAL",
+          "final_state_correct": true,
+          "forbidden_state_violations": [],
+          "detection_delay_confirmed_hours": null,
+          "runs_after_block_episode": [],
+          "all_correct": true
+        }
+      ],
+      "questions": 22,
+      "candidates": 22,
+      "questions_outside_work_hours": 19,
+      "false_negatives": [
+        "CASE06",
+        "CASE08",
+        "CASE12"
+      ],
+      "true_positive": 7,
+      "false_positive": 11,
+      "unresolved": 4
+    }
+  ],
+  "llm": {
+    "provider": "ollama",
+    "think": false,
+    "model": "qwen3:32b",
+    "calls": 97,
+    "api": 0,
+    "cache": 97,
+    "fallback": 0,
+    "available": true,
+    "first_error": null,
+    "key_present": false
+  }
+}
