@@ -55,7 +55,7 @@ Ollama에 연결할 수 없으면 답장 해석은 규칙 해석기로 자동 �
 **Phase 1 — Time-aware 관찰 환경 + Tool layer (완료)**
 
 - `as_of` 시점에 알 수 있었던 정보만 담는 `ProjectSnapshot`, Task 상태의 과거 시점 복원.
-- Agent Tool 8종(관찰 5 + 행동 3), 시뮬레이션 응답의 행동 후 공개, 지원 요청 Human-in-the-loop, Tool 호출 로그.
+- 메인 정체 관리 Agent Tool 7종(관찰 4 + 행동 3)과 별도의 기여 주장 검증 보조 기능용 Claim Tool, 시뮬레이션 응답의 행동 후 공개, 지원 요청 Human-in-the-loop, Tool 호출 로그.
 
 **Phase 2 — Contribution Claim 검증 Agent (완료, 결정적 구현)**
 
